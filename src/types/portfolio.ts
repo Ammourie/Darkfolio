@@ -25,7 +25,8 @@ export interface Project {
   main_image: string;
   gallery_images: string[];
   source_code_url?: string;
-  live_url?: string;
+  google_play?: string;
+  apple_store?: string;
   date?: string;
   company?: string;
 }

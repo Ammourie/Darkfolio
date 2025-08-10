@@ -21,6 +21,9 @@ interface ImageGalleryProps {
 }
 
 export function ImageViewer({ src, alt, className, children }: ImageViewerProps) {
+  // Ensure we have a valid image URL
+  const imageSrc = src || 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjNmNGY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzljYTNhNiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlIG5vdCBhdmFpbGFibGU8L3RleHQ+PC9zdmc+';
+  
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -33,7 +36,7 @@ export function ImageViewer({ src, alt, className, children }: ImageViewerProps)
           <DialogTitle>Image Viewer</DialogTitle>
         </VisuallyHidden>
         <Image
-          src={src}
+          src={imageSrc}
           alt={alt}
           width={1200}
           height={800}
@@ -49,12 +52,20 @@ export function ImageGallery({ images, altPrefix, className }: ImageGalleryProps
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
 
+  // Filter out empty or invalid image URLs
+  const validImages = images.filter(img => img && img.trim() !== '');
+  
+  // Ensure we have at least one valid image
+  if (validImages.length === 0) {
+    return <div className="text-center text-muted-foreground p-8">No images available</div>;
+  }
+
   const nextImage = () => {
-    setCurrentIndex((prev) => (prev + 1) % images.length);
+    setCurrentIndex((prev) => (prev + 1) % validImages.length);
   };
 
   const prevImage = () => {
-    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
+    setCurrentIndex((prev) => (prev - 1 + validImages.length) % validImages.length);
   };
 
   const openImage = (index: number) => {
@@ -65,7 +76,7 @@ export function ImageGallery({ images, altPrefix, className }: ImageGalleryProps
   return (
     <>
       <div className={`grid grid-cols-1 sm:grid-cols-2 gap-4 ${className}`}>
-        {images.map((img, index) => (
+        {validImages.map((img, index) => (
           <div
             key={index}
             className="relative w-full h-64 rounded-lg overflow-hidden shadow-md cursor-pointer transition-transform hover:scale-105 bg-black"
@@ -97,7 +108,7 @@ export function ImageGallery({ images, altPrefix, className }: ImageGalleryProps
           </VisuallyHidden>
           <div className="relative">
             <Image
-              src={images[currentIndex]}
+              src={validImages[currentIndex]}
               alt={`${altPrefix} ${currentIndex + 1}`}
               width={1200}
               height={800}
@@ -105,7 +116,7 @@ export function ImageGallery({ images, altPrefix, className }: ImageGalleryProps
               priority
             />
             
-            {images.length > 1 && (
+            {validImages.length > 1 && (
               <>
                 <Button
                   variant="ghost"
@@ -126,7 +137,7 @@ export function ImageGallery({ images, altPrefix, className }: ImageGalleryProps
                 </Button>
                 
                 <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/50 text-white px-3 py-1 rounded-full text-sm">
-                  {currentIndex + 1} / {images.length}
+                  {currentIndex + 1} / {validImages.length}
                 </div>
               </>
             )}

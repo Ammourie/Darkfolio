@@ -114,6 +114,92 @@
   ],
   "projects": [
     {
+      "slug": "border-ports-app",
+      "title": "Border Ports App",
+      "description_short": "An app for authorized personnel to monitor and manage operations at border ports efficiently.",
+      "description_long": "The Border Ports app is a specialized platform designed for authorized personnel to monitor and manage operations at border ports. It provides real-time insights into port activities, including cargo tracking, revenue monitoring, and operational status across multiple border locations. Key features include centralized data access, customizable dashboards for different roles, and secure reporting tools to ensure smooth and efficient port management.",
+      "tags": [
+        "Port Management",
+        "Border Security",
+        "Cargo Tracking",
+        "Real-time Monitoring",
+        "Mobile App",
+        "Data Analytics"
+      ],
+      "main_image": "https://res.cloudinary.com/doujfg8db/image/upload/v1751125137/main_q7zq3o.jpg",
+      "gallery_images": [
+        "https://res.cloudinary.com/doujfg8db/image/upload/v1751125134/1_jh0trn.jpg",
+        "https://res.cloudinary.com/doujfg8db/image/upload/v1751125133/2_adjong.jpg",
+        "https://res.cloudinary.com/doujfg8db/image/upload/v1751125133/3_jcjrr8.jpg",
+        "https://res.cloudinary.com/doujfg8db/image/upload/v1751125134/4_cmhjz8.jpg",
+        "https://res.cloudinary.com/doujfg8db/image/upload/v1751125135/5_ujspx9.jpg",
+        "https://res.cloudinary.com/doujfg8db/image/upload/v1751125138/6_ew0xnr.jpg"
+      ],
+      "date": "May 15, 2025 - June 15, 2025",
+      "company": "Osous Technology LLC",
+      "google_play": "https://play.google.com/store/apps/details?id=com.osousTech.borderPorts"
+    },
+    {
+      "slug": "benz-technical-app",
+      "title": "Benz Technical App",
+      "description_short": "Flutter-based eCommerce app for electricians and users to browse, buy electrical products, and earn rewards.",
+      "description_long": "The Benz Technical App (also known as Ataa-Electrician App) is a Flutter-based eCommerce solution for electricians and end-users. It offers a seamless platform to explore vendor catalogs, purchase products from nearby dealers, and benefit from a rewards system. Features include search and filter options, a streamlined shopping cart, secure checkout, and unique gifting options (search, order with points, track orders), creating an enhanced and rewarding shopping experience.",
+      "tags": [
+        "Flutter",
+        "eCommerce",
+        "Electrical Products",
+        "Vendor Management",
+        "Dealer Locator",
+        "Order Tracking",
+        "Mobile App",
+        "Rewards System",
+        "B2B Platform",
+        "Gifting Features"
+      ],
+      "main_image": "https://res.cloudinary.com/doujfg8db/image/upload/v1751124847/main_vq6usc.jpg",
+      "gallery_images": [
+        "https://res.cloudinary.com/doujfg8db/image/upload/v1751124844/1_kxnbux.jpg",
+        "https://res.cloudinary.com/doujfg8db/image/upload/v1751124844/2_hfqnzd.jpg",
+        "https://res.cloudinary.com/doujfg8db/image/upload/v1751124845/3_eiucxl.jpg",
+        "https://res.cloudinary.com/doujfg8db/image/upload/v1751124846/4_c24nin.jpg",
+        "https://res.cloudinary.com/doujfg8db/image/upload/v1751124847/5_fjrx0y.jpg",
+        "https://res.cloudinary.com/doujfg8db/image/upload/v1751124846/6_zode6t.jpg",
+        "https://res.cloudinary.com/doujfg8db/image/upload/v1751124846/7_sahk7p.jpg",
+        "https://res.cloudinary.com/doujfg8db/image/upload/v1751124847/8_cp8yu0.jpg"
+      ],
+      "date": "January 2025",
+      "company": "Osous Technology LLC",
+      "store_links": {
+        "google_play": "https://play.google.com/store/apps/details?id=com.osoustech.ataaElectrician",
+        "apple_store": "https://apps.apple.com/kg/app/%D8%A8%D9%86%D8%B2-%D8%A7%D9%84%D9%81%D9%86%D9%8A/id6742101831"
+      }
+    },
+    {
+      "slug": "nasr-election-app",
+      "title": "Nasr Election App",
+      "description_short": "An app that simplifies registration and tracking of voter data at polling stations for election agents.",
+      "description_long": "The Nasr app makes it easier for election agents to register and track voter data at their polling stations. The app supports adding new voters with their full details and allows for editing or deleting information when necessary. It features a basic function for determining each voter's voting status (voted/did not vote) via a quick and straightforward option. Its simple interface is suitable for field work and ensures immediate, seamless data updates, making it an ideal tool for monitoring electoral processes accurately and quickly.",
+      "tags": [
+        "Election Management",
+        "Voter Tracking",
+        "Mobile App",
+        "Data Management",
+        "Field Work",
+        "Real-time Updates"
+      ],
+      "main_image": "https://res.cloudinary.com/doujfg8db/image/upload/v1751125234/main_o5rzjt.jpg",
+      "gallery_images": [
+        "https://res.cloudinary.com/doujfg8db/image/upload/v1751125230/1_l8ehzh.jpg",
+        "https://res.cloudinary.com/doujfg8db/image/upload/v1751125231/2_enedph.jpg",
+        "https://res.cloudinary.com/doujfg8db/image/upload/v1751125232/3_f79vn5.jpg",
+        "https://res.cloudinary.com/doujfg8db/image/upload/v1751125232/4_x3t4zd.jpg",
+        "https://res.cloudinary.com/doujfg8db/image/upload/v1751125233/5_chijvb.jpg"
+      ],
+      "date": "May 15, 2025 - July 31, 2025",
+      "company": "Osous Technology LLC",
+      "google_play": "https://play.google.com/store/apps/details?id=com.osoustech.electionApp"
+    },
+    {
       "slug": "maria-taxi-driver-redesigned",
       "title": "Maria Taxi (Driver Redesigned)",
       "description_short": "A comprehensive taxi and transportation service with redesigned driver interface offering four main services including taxi, bus, and tourism transportation.",
@@ -140,7 +226,8 @@
         "http://res.cloudinary.com/doujfg8db/image/upload/v1733293402/mc6igz4lhvp1v9m4grne.jpg"
       ],
       "date": "Dec 2024",
-      "company": "Osous Technology LLC"
+      "company": "Osous Technology LLC",
+      "google_play": "https://x.com"
     },
     {
       "slug": "maria-taxi-customer-and-driver-applications",
@@ -198,7 +285,7 @@
         "http://res.cloudinary.com/doujfg8db/image/upload/v1729818948/pewgxoogrlwmda6h2vdc.png",
         "http://res.cloudinary.com/doujfg8db/image/upload/v1729818949/q2mme2bdwovciatbqaqk.png"
       ],
-      "date": "Oct 2024",
+      "date": "July 2024",
       "company": "Osous Technology LLC"
     },
     {
@@ -230,34 +317,65 @@
         "http://res.cloudinary.com/doujfg8db/image/upload/v1729259862/z9yjbroascrn87lx7egc.png",
         "http://res.cloudinary.com/doujfg8db/image/upload/v1729259863/c703ctotssxefwbkllsc.png"
       ],
-      "date": "Oct 2024",
+      "date": "Aug 2024",
       "company": "Osous Technology LLC"
     },
     {
-      "slug": "ataa-electrician-app",
-      "title": "Ataa-Electrician App",
-      "description_short": "Flutter-based eCommerce application for electricians to browse, purchase products from vendors, and earn rewards.",
-      "description_long": "The Ataa eCommerce Electrician App is an innovative Flutter-based application inspired by modular eCommerce principles, serving as part of a comprehensive two-application ecosystem. While one application empowers vendors to manage their products and services efficiently, the Ataa Electrician App provides electricians with a seamless platform to browse vendor catalogs, discover products, and make purchases with an integrated rewards system. The application features an intuitive interface for viewing vendor profiles and their product offerings, a streamlined shopping cart system for easy product selection, a secure and efficient checkout process, and a points-based rewards program that allows electricians to earn benefits from vendor partnerships, creating a mutually beneficial ecosystem for all stakeholders. My role involved developing the complete electrician-facing application with a focus on user experience optimization for the trade professional market, implementing the vendor browsing system, shopping cart functionality, secure checkout process, and the innovative points-based rewards system that incentivizes continued platform engagement.",
+      "slug": "green-multivendor-farming-app",
+      "title": "Green – Multivendor Farming Application",
+      "description_short": "A dual-role multivendor app for farmers and hobbyists to buy farming tools, seeds, and equipment with tailored content for each user type.",
+      "description_long": "Green is a Flutter-based multivendor eCommerce platform designed for the agricultural sector, catering to both farmers and hobbyists. The app provides two distinct user experiences: Farmers can browse vendors and products relevant to professional agriculture, such as seeds, farming equipment, and specialized tools; Hobbyists can explore vendors and products more suited to small-scale or home farming projects. Both user types can add products to their cart, proceed to checkout, and view their order history. The platform ensures personalized content visibility, allowing each user type to see products and offers that are most relevant to their needs, creating a more engaging and efficient shopping experience in the farming industry.",
       "tags": [
         "Flutter",
         "eCommerce",
+        "Multivendor",
+        "Agriculture",
+        "Farming Equipment",
+        "Seeds",
+        "Dual User Roles",
+        "B2C Platform"
+      ],
+      "main_image": "",
+      "gallery_images": [],
+      "date": "June 29, 2025 - July 20, 2025",
+      "company": "Osous Technology LLC"
+    },
+    {
+      "slug": "lamasat-furniture-ecommerce-app",
+      "title": "Lamasat – Furniture eCommerce Application",
+      "description_short": "A furniture eCommerce platform with dual account types for regular users and designers, offering browsing, purchasing, and custom request features.",
+      "description_long": "Lamasat is a Flutter-based eCommerce application dedicated to housing and interior furniture. It offers two account types: Regular Users, who can explore furniture collections, view product details, add items to their cart, proceed to checkout, and track orders; and Designers, who have all the same capabilities as regular users, plus the ability to request specific custom products by attaching reference images and descriptions. This dual-role system enables both standard consumers and professional designers to shop and collaborate more effectively, creating a flexible marketplace for furnishing needs.",
+      "tags": [
+        "Flutter",
+        "eCommerce",
+        "Furniture",
+        "Interior Design",
+        "Custom Requests",
+        "Dual User Roles",
+        "B2C Platform"
+      ],
+      "main_image": "",
+      "gallery_images": [],
+      "date": "July 20, 2025 - August 3, 2025",
+      "company": "Osous Technology LLC"
+    },
+    {
+      "slug": "multivendor-restaurants-modular-app",
+      "title": "Multivendor Restaurants Modular Application",
+      "description_short": "A modular multivendor platform for restaurants with menu browsing, ordering, and vendor management features.",
+      "description_long": "This Flutter-based multivendor restaurant application offers a fully modular architecture that supports multiple restaurants under one platform. Users can browse restaurant menus, filter by cuisine type, place orders, and track deliveries in real time. Vendors can manage their menus, receive orders, and update their availability. The modular design allows for easy integration of additional features like loyalty programs, promotional campaigns, and delivery tracking. It is built for scalability, ensuring it can grow from small local food markets to large multi-city operations.",
+      "tags": [
+        "Flutter",
+        "eCommerce",
+        "Multivendor",
+        "Restaurants",
+        "Food Delivery",
         "Vendor Management",
-        "Mobile App",
-        "Rewards System",
-        "B2B Platform"
+        "Modular Architecture"
       ],
-      "main_image": "http://res.cloudinary.com/doujfg8db/image/upload/v1736848300/roxx1uim57jet3yktlwi.png",
-      "gallery_images": [
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1736848307/auncyivxb9tyntrliewu.png",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1736848343/z3ahoiexfclmyixwhxcm.png",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1736848350/dq79o3las704n2kouncw.png",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1736848360/ygxpqm7apto75jnyzp7c.png",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1736848366/r7aod1muc17dtpahx1fu.png",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1736848368/wsiugsgysh23ksqifmnp.png",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1736848370/ygxzvetzmfymywiqnov2.png",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1736848375/qx441k91fgc4l3swuaui.png"
-      ],
-      "date": "Jan 2025",
+      "main_image": "",
+      "gallery_images": [],
+      "date": "August 3, 2025 - Present",
       "company": "Osous Technology LLC"
     }
   ],

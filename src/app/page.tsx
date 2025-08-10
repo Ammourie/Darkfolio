@@ -32,6 +32,10 @@ export default async function Home({ searchParams }: PageProps) {
   const langParam = params?.lang; // Safely access lang
   const currentLanguage: Language = isLanguage(langParam) ? langParam : 'en';
   const data = await getPortfolioData(currentLanguage);
+  
+  // Ensure we have a valid avatar URL
+  const avatarSrc = data.personal.avatar || 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjNmNGY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzljYTNhNiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlIG5vdCBhdmFpbGFibGU8L3RleHQ+PC9zdmc+';
+  
   return (
     <ClientPageWrapper initialLanguage={currentLanguage} navigation={data.navigation}>
       <div className="relative flex flex-col min-h-screen bg-background overflow-x-hidden">
@@ -42,7 +46,7 @@ export default async function Home({ searchParams }: PageProps) {
           <AnimatedSection id="hero" className="text-center flex flex-col items-center min-h-[80vh] justify-center">
             <div className="relative mb-8">
               <Avatar className="w-32 h-32 md:w-40 md:h-40 border-4 border-primary shadow-2xl">
-                <AvatarImage src={data.personal.avatar} alt={data.personal.name} />
+                <AvatarImage src={avatarSrc} alt={data.personal.name} />
                 <AvatarFallback className="text-2xl font-bold">{data.personal.name.charAt(0)}</AvatarFallback>
               </Avatar>
               <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-accent/20 rounded-full blur-xl opacity-50"></div>
