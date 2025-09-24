@@ -34,6 +34,14 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+
+        protocol: "https",
+        hostname: "play-lh.googleusercontent.com",
+        port: '',
+        pathname: '/**',
+      },
+
     ],
   },
   webpack(config) {
