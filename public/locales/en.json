@@ -198,65 +198,63 @@
       "google_play": "https://play.google.com/store/apps/details?id=com.osoustech.electionApp"
     },
     {
-      "slug": "maria-taxi-driver-redesigned",
-      "title": "Maria Taxi (Driver Redesigned)",
-      "description_short": "A comprehensive taxi and transportation service with redesigned driver interface offering four main services including taxi, bus, and tourism transportation.",
-      "description_long": "The Maria Taxi project is a comprehensive transportation platform consisting of two Flutter applications - one for customers and another for drivers. The platform provides four essential services: Taxi Service where customers can request rides and drivers can accept requests while navigating passengers to their destinations; General Bus Service allowing customers to view available trips and book seats while drivers manage trip details; Tourism Bus Service offering organized travel options specifically for tourism trips; and School Bus Service which is currently under development. The driver application features a redesigned interface with enhanced functionality for managing trips, accepting ride requests, and providing seamless navigation services. My contribution involved developing the complete driver application with all key functionalities for managing trips and accepting ride requests, while also implementing several screen designs in the customer application to ensure optimal user experience.",
+      "slug": "darbak-customer-app",
+      "title": "Darbak – Customer Application",
+      "description_short": "A multi-service transportation app allowing users to request rides, deliveries, and towing services.",
+      "description_long": "Darbak is a Flutter-based transportation and on-demand services application that enables users to request taxi rides, goods delivery, and towing services through a single platform. The app focuses on simplicity, fast booking, real-time tracking, and seamless communication between customers and drivers, providing a reliable urban mobility experience.",
       "tags": [
         "Flutter",
         "Transportation",
+        "Taxi Service",
+        "Delivery",
         "Live Tracking",
         "Google Maps",
-        "Driver App",
-        "Mobile Development"
+        "Mobile App"
       ],
-      "main_image": "http://res.cloudinary.com/doujfg8db/image/upload/v1733293387/q7jfrncrc8p2faakh3gn.webp",
+      "main_image": "https://play-lh.googleusercontent.com/-ck3qHFlnphREJjV-sB3ynjjFiX5z3tJJnnB4PnVpcczEUDduYwGefNnqWT6sO7_51pOoEdkxUqXzJvWHXj3KQ=w240-h480-rw",
       "gallery_images": [
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1733293389/luz1rscfvcjrnmzfrc6j.jpg",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1733293391/dtqb549gzdmtug5qlfwu.jpg",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1733293392/aa79nfxyn80dhstnkltd.jpg",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1733293394/oo9zb9bvdptyr6rvzcr7.jpg",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1733293396/gxzb7b4mdgfexgcgnhnr.jpg",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1733293397/sgbcc0iyj5ac3ulliw9w.jpg",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1733293398/say3hop45q0bzahewiii.jpg",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1733293399/ia3ea7xnp8vzcropbgob.jpg",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1733293400/ubw70xrayoia4p4gyoyg.jpg",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1733293402/mc6igz4lhvp1v9m4grne.jpg"
+        "https://play-lh.googleusercontent.com/FQ1cirtwQIAlpJk4p0Z6vMtPdEp0OJLJN8x_jW_c4JYcZmZrU52883RHuGoRnffqX3zX5DLUcoHiBdWcIgdY=w526-h296-rw",
+        "https://play-lh.googleusercontent.com/Vpos-nF82TNS14ulvb_F4r1T417an1P9Px4ThThDATuXMySjbC54RjPONwYHbsnsHfn864FRLbuvjQJfkmo6VQ=w526-h296-rw",
+        "https://play-lh.googleusercontent.com/_eJdiQIWJ0hRr0s5lu5bat4ND8zc0sVSA60H_M10XpkW-KfEpzj9E8wvQn24Y-28Ws6ltTuxOVqmSBAX7-UV=w526-h296-rw",
+        "https://play-lh.googleusercontent.com/81NLOt8wBz3mHff-whJfuGzttzn11l7J5vyhyIsnUUyh3Jb4Bm9HMr5BBNHREKsxCaeZHebXUA_v4rnuve0jRbM=w526-h296-rw",
+        "https://play-lh.googleusercontent.com/m6Gf-7Lhp976iB0xnVGOqfshxrBM7o8fUhKWSnm04MQSYLdb2pdgzWP6XSgavnTLdWaofDl32JJiDOVEkmXcaw=w526-h296-rw",
+        "https://play-lh.googleusercontent.com/1Tlo8NEsQa2lbkBbCNak7d1emrxdklM0NdWwO-oTQkYzPna6ZLf3QB1UXAn8b3N0CvAafZ6vd9r3R3x4ZjEB4A=w526-h296-rw",
+        "https://play-lh.googleusercontent.com/wf7NW3jgh-4dZamC1R6-AWmEIYShvL3wP5f1mkMDwBbnEwYpXYNCZcIhOUCYYakQzUMMxGTTg7cLjr9GnryHoQ=w526-h296-rw",
+        "https://play-lh.googleusercontent.com/P01Gdv9TEInPUkC0OWCxVUQ9Jp5xbNoyktrNX8IMNH_2-XPgiC6N_8G5b6ev2zWA9PuKfpvIYn-YC26PqBioiHo=w526-h296-rw"
       ],
-      "date": "Dec 2024",
+      "date": "2025",
       "company": "Osous Technology LLC",
-      "google_play": "https://x.com"
+      "google_play": "https://play.google.com/store/apps/details?id=com.osoustech.maria",
+      "apple_store": "https://apps.apple.com/kg/app/darbak/id6752897584"
     },
     {
-      "slug": "maria-taxi-customer-and-driver-applications",
-      "title": "Maria Taxi – Customer and Driver Applications",
-      "description_short": "Complete transportation platform with dual applications for customers and drivers, offering taxi, bus, and tourism services.",
-      "description_long": "Maria Taxi is a comprehensive transportation ecosystem built with Flutter, featuring separate applications for customers and drivers. The platform delivers four core services: a Taxi Service enabling customers to request rides while drivers can accept and navigate passengers efficiently; a General Bus Service where customers browse available trips and book seats while drivers manage and update trip information; a Tourism Bus Service providing specialized organized travel experiences for tourists; and a School Bus Service currently in active development. This dual-app approach ensures optimized user experiences for both service providers and consumers, with seamless integration between customer requests and driver operations. My role involved leading the development of the complete driver application, implementing all essential functionalities for trip management and ride request handling, while also contributing to the customer application by developing multiple screen designs to ensure a cohesive user experience across both platforms.",
+      "slug": "darbak-captain-app",
+      "title": "Darbak Captain – Driver Application",
+      "description_short": "A driver-focused app enabling captains to accept rides, manage trips, and track earnings in real time.",
+      "description_long": "Darbak Captain is the driver-side Flutter application designed for Darbak service providers. Captains can receive and accept ride requests, navigate to pickup and drop-off locations using live maps, manage trip history, and monitor earnings. The app is optimized for performance, real-time updates, and ease of use for drivers operating on the Darbak platform.",
       "tags": [
         "Flutter",
         "Transportation",
-        "Multi-Service Platform",
-        "Customer App",
         "Driver App",
-        "Real-time Navigation"
+        "Live Tracking",
+        "Google Maps",
+        "Trip Management"
       ],
-      "main_image": "http://res.cloudinary.com/doujfg8db/image/upload/v1729273035/hpuvnei0kp1ushnvpnx2.png",
+      "main_image": "https://play-lh.googleusercontent.com/g-FBJmK0c-isFrH-wFr5UCkuwikVrxyCYDnqW31y6t2AqjHSJ_tc7V4kitTJ9Uh-nJkj1Wi6DAVTwUB0ota0LSo=w240-h480-rw",
       "gallery_images": [
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1729273036/ibg0yzjgr8uxhfys10i2.png",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1729273037/id5hn2yszyjua7mzd1k2.png",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1729273038/o8b3mc4fbv52kwrx4wta.png",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1729273039/p6dpvwbaasbjrxwwhgoz.png",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1729273040/oegu6xwt5ulfhyblugxc.png",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1729273041/hdbo6gbgft06nc6sntxm.png",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1729273043/hhcfjwi3dfrkx2oal07h.png",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1729273044/p4d9p9ot0sgwwk2nkuf0.png",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1729273047/zdeprg8knzwymh9pwysz.png",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1729273048/tr77oa9zu80lgdjwkbbe.png",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1729273051/nr5cy6tdi5wudklhptb4.png",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1729273053/sysy2zdldkt3dxrbi3f4.png"
+        "https://play-lh.googleusercontent.com/uKb0M79o4aArKDjZVfW99A447Wxnf9MfOO8HnnJeGZjUm82-PeVfps0HZNPzLBZkIhBsK2Tduj0P5jGzBAXhqg=w526-h296-rw",
+        "https://play-lh.googleusercontent.com/FsE0iytn0uAgxTHTmsZzDhX_Mx8SQN_DF94moJHTR_KR2ube_WzdPWYjGBac_Ygvz8I_xnBw5LW1KlLIzG-Y5A=w526-h296-rw",
+        "https://play-lh.googleusercontent.com/_Isu-Yj6fJiGWTYhpfN2E2Jv_R1jxEYV11ymLIr2FFjoCS3z-uikQY62A_tMH9umU4P7l8eMoWA264OmymuZ=w526-h296-rw",
+        "https://play-lh.googleusercontent.com/p9vFZRuSOktGj3T-3VwdLR1PksB7jxDVDSdJTUNYOWVmAwQjQNlAJO9-gG9palP86z2b3GFAcopy0mU93uC4_Q=w526-h296-rw",
+        "https://play-lh.googleusercontent.com/N6Y58-TFovD0Q6ZVD307035BM-KG1k8GkrTS7dBgpOmJx8vaRFvgDVcdWj94xRoE75bgOSieJsTLc-WEt3CT=w526-h296-rw",
+        "https://play-lh.googleusercontent.com/QgqMsvLutbgTNYUKSb9b-47qXHnHNBaqIKK6F7e-5I09l9ZRVl8_h1wvIlyfnFbzGvs1xMyo3sI5W5mmBfKjUog=w526-h296-rw",
+        "https://play-lh.googleusercontent.com/K_i7zXeJtFb_n13x3l9QcrPpuNipRx7ZMyBD2iKP5k7IJYsRsUVSDvtjVwShl4C2nk6K0HH3wFBHRe8U0hzVTUI=w526-h296-rw",
+        "https://play-lh.googleusercontent.com/65w2_2ERuMl7YKyATIymUaxuHdfIMlb2fgrIqt5K32wqMA6hmU9Ehpzs70_GWbhVsUDaVgHODhJ16TUeUEof=w526-h296-rw"
       ],
-      "date": "Oct 2024",
-      "company": "Osous Technology LLC"
+      "date": "2025",
+      "company": "Osous Technology LLC",
+      "google_play": "https://play.google.com/store/apps/details?id=com.osoustech.driverMaria",
+      "apple_store": "https://apps.apple.com/kg/app/darbak-captain/id6752899275"
     },
     {
       "slug": "fashion-modular-ecommerce-application",
