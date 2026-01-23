@@ -171,10 +171,8 @@
       ],
       "date": "يناير 2025",
       "company": "Osous Technology LLC",
-      
-        "google_play": "https://play.google.com/store/apps/details?id=com.osoustech.ataaElectrician",
-        "apple_store": "https://apps.apple.com/kg/app/%D8%A8%D9%86%D8%B2-%D8%A7%D9%84%D9%81%D9%86%D9%8A/id6742101831"
-    
+      "google_play": "https://play.google.com/store/apps/details?id=com.osoustech.ataaElectrician",
+      "apple_store": "https://apps.apple.com/kg/app/%D8%A8%D9%86%D8%B2-%D8%A7%D9%84%D9%81%D9%86%D9%8A/id6742101831"
     },
     {
       "slug": "nasr-election-app",
@@ -349,10 +347,8 @@
       ],
       "date": "29 يونيو 2025 - 20 يوليو 2025",
       "company": "Osous Technology LLC",
-    
-        "google_play": "https://play.google.com/store/apps/details?id=com.osoustech.greenApp",
-        "apple_store": "https://apps.apple.com/kg/app/%D8%A3%D8%AE%D8%B6%D8%B1-%D9%84%D9%84%D8%B2%D8%B1%D8%A7%D8%B9%D8%A9/id6748577762"
-    
+      "google_play": "https://play.google.com/store/apps/details?id=com.osoustech.greenApp",
+      "apple_store": "https://apps.apple.com/kg/app/%D8%A3%D8%AE%D8%B6%D8%B1-%D9%84%D9%84%D8%B2%D8%B1%D8%A7%D8%B9%D8%A9/id6748577762"
     },
     {
       "slug": "lamasat-furniture-ecommerce-app-ar",
@@ -368,29 +364,18 @@
         "أدوار مستخدمين مزدوجة",
         "منصة B2C"
       ],
-      "main_image": "",
-      "gallery_images": [],
-      "date": "20 يوليو 2025 - 3 أغسطس 2025",
-      "company": "Osous Technology LLC"
-    },
-    {
-      "slug": "multivendor-restaurants-modular-app-ar",
-      "title": "تطبيق مطاعم متعدد البائعين – هيكلية معيارية",
-      "description_short": "منصة مطاعم متعددة البائعين بهيكلية معيارية تدعم عرض القوائم، الطلبات، وإدارة البائعين.",
-      "description_long": "هذا التطبيق المبني باستخدام Flutter يوفر منصة معيارية لإدارة عدة مطاعم تحت نظام واحد. يمكن للمستخدمين تصفح قوائم الطعام، التصفية حسب نوع المطبخ، تقديم الطلبات، وتتبع التسليم في الوقت الفعلي. يمكن للبائعين إدارة القوائم، استقبال الطلبات، وتحديث التوافر. التصميم المعياري للتطبيق يسمح بإضافة ميزات جديدة بسهولة مثل برامج الولاء، الحملات الترويجية، وتتبع التوصيل. تم تصميمه ليتوسع من الأسواق المحلية الصغيرة إلى عمليات متعددة المدن.",
-      "tags": [
-        "Flutter",
-        "تجارة إلكترونية",
-        "متعدد البائعين",
-        "مطاعم",
-        "توصيل الطعام",
-        "إدارة البائعين",
-        "هيكلية معيارية"
+      "main_image": "https://play-lh.googleusercontent.com/nfyTMDWrxvB4_RFTHzpy1RoY15OWn0iQNzvoed69bRZefYeBg-C-FqG6RsN-Eja0DzVg3Ka-2EUjY0DIKAAfJA=w240-h480-rw",
+      "gallery_images": [
+        "https://play-lh.googleusercontent.com/FMfEpaS1TiyomTUuUWNlql7Ys1F8V_RYJO2Vh-yY0fM2h8FxPUbhNPdmxbDrq7zNzZ7DxSqe4QIphg9FuWh-2g=w2560-h1440-rw",
+        "https://play-lh.googleusercontent.com/xOKzQCIzO-AVgelFS9ZvczqAQPP0dVNVwKt6HF9egz7gUzVun6hOYQ5KvrSGH15EZ4Wgob4ClLxvtS5kVxeu=w2560-h1440-rw",
+        "https://play-lh.googleusercontent.com/_n1bMKmMSr3BGKY3kpaovukcLRv65SPf5U4SmTGR22mjtbk9MAczw3h7cbc2iw4o0e0rJhVEFZRPKD2Of1OJCQ=w2560-h1440-rw",
+        "https://play-lh.googleusercontent.com/Ps5khrGu4xQKfbhBcs2NVvrrYbi3L7egXt7wFiErRBeD251UoavrWYqDqBeZgEA2kbkHMw3DtIJAacYiYrom=w2560-h1440-rw",
+        "https://play-lh.googleusercontent.com/q9pzcva7waZgFuX9wXa_0vf-2U6YChhMlvFDKiNomVy-n-o3AOL6YXpsLEdxaIV3DFgoKFxhdOgtyGfPx2iEvw=w2560-h1440-rw"
       ],
-      "main_image": "",
-      "gallery_images": [],
-      "date": "3 أغسطس 2025 - الآن",
-      "company": "Osous Technology LLC"
+      "date": "20 يوليو 2025 - 3 أغسطس 2025",
+      "company": "Osous Technology LLC",
+      "google_play": "https://play.google.com/store/apps/details?id=com.osoustech.lamasat",
+      "apple_store": "https://apps.apple.com/kg/app/lamasat-design/id6752251547"
     }
   ],
   "static_strings": {
