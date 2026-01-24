@@ -2,6 +2,10 @@ export interface PersonalInfo {
   name: string;
   title: string;
   email: string;
+  /**
+   * Phone number shown in the contact section (kept as a string to preserve formatting).
+   */
+  phone: string;
   social: {
     github: string;
     linkedin: string;
@@ -72,6 +76,10 @@ export interface Navigation {
   education: string;
   skills: string;
   projects: string;
+  /**
+   * Label for the CV/resume download navigation item.
+   */
+  cv: string;
   contact: string;
 }
 

@@ -107,6 +107,27 @@ export default {
         'material-xl': '0 8px 10px 1px rgba(0,0,0,0.2), 0 3px 14px 2px rgba(0,0,0,0.14), 0 5px 5px -3px rgba(0,0,0,0.12)',
       },
       keyframes: {
+        /**
+         * Subtle floating motion used by background decorations.
+         */
+        float: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-12px)' },
+        },
+        /**
+         * Horizontal drift for background decorations.
+         */
+        'float-x': {
+          '0%, 100%': { transform: 'translateX(0px)' },
+          '50%': { transform: 'translateX(14px)' },
+        },
+        /**
+         * Gentle glow pulse for ambient orbs/icons.
+         */
+        'pulse-glow': {
+          '0%, 100%': { opacity: '0.25' },
+          '50%': { opacity: '0.5' },
+        },
         'accordion-down': {
           from: {
             height: '0',
@@ -143,6 +164,10 @@ export default {
         },
       },
       animation: {
+        'float-slow': 'float 9s ease-in-out infinite',
+        'float-slower': 'float 14s ease-in-out infinite',
+        'float-x-slow': 'float-x 12s ease-in-out infinite',
+        'glow-slow': 'pulse-glow 10s ease-in-out infinite',
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'fade-in': 'fade-in 0.6s ease-out',

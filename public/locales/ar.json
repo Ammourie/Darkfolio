@@ -7,6 +7,7 @@
     "education": "التعليم",
     "skills": "المهارات",
     "projects": "المشاريع",
+    "cv": "السيرة الذاتية",
     "contact": "التواصل"
   },
   "personal": {
@@ -380,6 +381,13 @@
   "static_strings": {
     "view_details": "عرض التفاصيل",
     "view_project": "عرض المشروع",
+    "download_cv": "تحميل السيرة الذاتية",
+    "view_projects": "عرض المشاريع",
+    "contact_description": "هل لديك فكرة مشروع؟ لنتحدث.",
+    "email": "البريد الإلكتروني",
+    "phone": "الهاتف",
+    "back_to_projects": "العودة إلى المشاريع",
+    "about_project": "عن هذا المشروع",
     "gallery": "المعرض",
     "company": "الشركة",
     "description": "الوصف",

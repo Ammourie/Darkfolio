@@ -1,9 +1,8 @@
 import { getPortfolioData } from '@/lib/data';
-import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Download } from 'lucide-react';
+import { Download, Phone } from 'lucide-react';
 import { Progress } from '@/components/ui/progress';
 import { ProjectCard } from '@/components/project-card';
 import { EducationTimeline, ExperienceTimeline } from '@/components/timeline';
@@ -51,7 +50,7 @@ export default async function Home({ searchParams }: PageProps) {
               </Avatar>
               <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-accent/20 rounded-full blur-xl opacity-50"></div>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold font-headline text-primary-foreground mb-4">
+            <h1 className="text-4xl md:text-6xl font-bold font-headline mb-4 bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent">
               {data.personal.name}
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl">
@@ -82,6 +81,21 @@ export default async function Home({ searchParams }: PageProps) {
                 <Link href={data.personal.social.telegram} target="_blank" aria-label="Telegram">
                   <FaTelegram className="h-6 w-6" />
                 </Link>
+              </Button>
+            </div>
+
+            {/* Primary Actions */}
+            <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
+              <Button asChild size="lg" className="rounded-xl px-6">
+                <a href="/cv/cv.pdf" download="Mohammed-Ammourie-CV.pdf">
+                  <Download className="h-5 w-5" />
+                  {data.static_strings['download_cv']}
+                </a>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="rounded-xl px-6">
+                <a href="#projects">
+                  {data.static_strings['view_projects']}
+                </a>
               </Button>
             </div>
           </AnimatedSection>
@@ -152,8 +166,63 @@ export default async function Home({ searchParams }: PageProps) {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {(data.projects || []).map((project) => (
-                <ProjectCard key={project.slug} project={project} lang={currentLanguage} />
+                <div key={project.slug} className="h-full">
+                  <ProjectCard project={project} lang={currentLanguage} />
+                </div>
               ))}
+            </div>
+          </AnimatedSection>
+
+          {/* Contact Section */}
+          <AnimatedSection id="contact" className="mt-24 max-w-4xl mx-auto" delay={600}>
+            <h2 className="text-3xl md:text-4xl font-bold text-center font-headline mb-8 text-primary">
+              {data.navigation.contact}
+            </h2>
+            <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-8 border border-border/50 shadow-lg">
+              <p className="text-lg text-center text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+                {data.static_strings['contact_description']}
+              </p>
+
+              <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="rounded-xl border border-border/50 bg-background/30 p-5 flex items-center gap-4">
+                  <div className="h-11 w-11 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
+                    <MdEmail className="h-5 w-5" />
+                  </div>
+                  <div className="min-w-0">
+                    <p className="text-sm text-muted-foreground">{data.static_strings['email']}</p>
+                    <a className="font-semibold hover:underline break-all" href={`mailto:${data.personal.email}`}>
+                      {data.personal.email}
+                    </a>
+                  </div>
+                </div>
+
+                <div className="rounded-xl border border-border/50 bg-background/30 p-5 flex items-center gap-4">
+                  <div className="h-11 w-11 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
+                    <Phone className="h-5 w-5" />
+                  </div>
+                  <div className="min-w-0">
+                    <p className="text-sm text-muted-foreground">{data.static_strings['phone']}</p>
+                    <a className="font-semibold hover:underline" href={`tel:${data.personal.phone}`}>
+                      {data.personal.phone}
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
+                <Button asChild className="rounded-xl px-6">
+                  <a href={`mailto:${data.personal.email}`}>
+                    <MdEmail className="h-5 w-5" />
+                    {data.static_strings['email']}
+                  </a>
+                </Button>
+                <Button asChild variant="secondary" className="rounded-xl px-6">
+                  <a href="/cv/cv.pdf" download="Mohammed-Ammourie-CV.pdf">
+                    <Download className="h-5 w-5" />
+                    {data.static_strings['download_cv']}
+                  </a>
+                </Button>
+              </div>
             </div>
           </AnimatedSection>
         </main>

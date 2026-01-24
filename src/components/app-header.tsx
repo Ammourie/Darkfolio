@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { LanguageSwitcher } from '@/components/language-switcher';
-import { Menu, X } from 'lucide-react';
+import { Download, Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 interface AppHeaderProps {
@@ -16,6 +16,7 @@ interface AppHeaderProps {
     education: string;
     skills: string;
     projects: string;
+    cv: string;
     contact: string;
   };
 }
@@ -25,6 +26,10 @@ export function AppHeader({ currentLanguage, onLanguageChange, navigation }: App
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
+    /**
+     * Toggles a more compact/solid header style after the user scrolls.
+     * This keeps the navigation readable over the hero background.
+     */
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
@@ -33,6 +38,9 @@ export function AppHeader({ currentLanguage, onLanguageChange, navigation }: App
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  /**
+   * Smoothly scrolls to the given section id while accounting for the fixed header.
+   */
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -54,7 +62,14 @@ export function AppHeader({ currentLanguage, onLanguageChange, navigation }: App
     { id: 'education', label: navigation.education },
     { id: 'skills', label: navigation.skills },
     { id: 'projects', label: navigation.projects },
+    { id: 'contact', label: navigation.contact },
   ];
+
+  /**
+   * Public path for the CV PDF. `public/cv/cv.pdf` becomes `/cv/cv.pdf` at runtime.
+   */
+  const cvHref = '/cv/cv.pdf';
+  const cvDownloadName = 'Mohammed-Ammourie-CV.pdf';
 
   return (
     <header
@@ -87,6 +102,19 @@ export function AppHeader({ currentLanguage, onLanguageChange, navigation }: App
                 {item.label}
               </Button>
             ))}
+
+            {/* CV Download */}
+            <Button
+              asChild
+              variant="secondary"
+              size="sm"
+              className="ml-2 px-3 py-2 text-sm font-semibold rounded-lg"
+            >
+              <a href={cvHref} download={cvDownloadName} aria-label={navigation.cv}>
+                <Download className="h-4 w-4" />
+                {navigation.cv}
+              </a>
+            </Button>
           </nav>
 
           {/* Language Switcher */}
@@ -127,6 +155,24 @@ export function AppHeader({ currentLanguage, onLanguageChange, navigation }: App
                   {item.label}
                 </Button>
               ))}
+
+              {/* CV Download */}
+              <Button
+                asChild
+                variant="secondary"
+                size="sm"
+                className="justify-start mx-4 mt-2 px-4 py-3 text-sm font-semibold rounded-lg"
+              >
+                <a
+                  href={cvHref}
+                  download={cvDownloadName}
+                  aria-label={navigation.cv}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <Download className="h-4 w-4" />
+                  {navigation.cv}
+                </a>
+              </Button>
             </nav>
           </div>
         )}

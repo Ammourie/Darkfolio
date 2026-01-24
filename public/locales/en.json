@@ -7,6 +7,7 @@
     "education": "Education",
     "skills": "Skills",
     "projects": "Projects",
+    "cv": "CV",
     "contact": "Contact"
   },
   "personal": {
@@ -397,6 +398,13 @@
   "static_strings": {
     "view_details": "View Details",
     "view_project": "View Project",
+    "download_cv": "Download CV",
+    "view_projects": "View Projects",
+    "contact_description": "Have a project in mind? Let’s talk.",
+    "email": "Email",
+    "phone": "Phone",
+    "back_to_projects": "Back to Projects",
+    "about_project": "About this project",
     "gallery": "Gallery",
     "company": "Company",
     "description": "Description",

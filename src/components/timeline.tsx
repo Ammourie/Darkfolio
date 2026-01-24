@@ -23,12 +23,15 @@ const TimelineItem = ({
   return (
     <div
       className={cn(
+        /**
+         * Timeline item with modern spacing and a clear left “rail”.
+         */
         'relative pl-16 pb-12'
       )}
     >
       <div
         className={cn(
-          'absolute left-0 top-1 flex h-12 w-12 items-center justify-center rounded-full bg-card border-2 border-primary shadow-lg'
+          'absolute left-0 top-1 flex h-12 w-12 items-center justify-center rounded-full bg-card/60 backdrop-blur-sm border border-border/70 shadow-material'
         )}
       >
         {React.cloneElement(icon as React.ReactElement, {
@@ -37,11 +40,11 @@ const TimelineItem = ({
       </div>
 
       {!isLast && (
-        <div className="absolute left-[22px] top-14 -bottom-4 w-0.5 bg-border" />
+        <div className="absolute left-[22px] top-14 -bottom-4 w-0.5 bg-gradient-to-b from-primary/30 via-border/60 to-transparent" />
       )}
 
       <div className="flex flex-col items-start gap-1 sm:flex-row sm:items-center sm:justify-between">
-        <h3 className="text-xl font-bold font-headline text-primary-foreground">{title}</h3>
+        <h3 className="text-xl font-bold font-headline tracking-tight text-foreground">{title}</h3>
         <p className="flex-shrink-0 text-sm font-medium text-muted-foreground">{period}</p>
       </div>
       <p className="mt-1 text-lg font-semibold text-primary">{subtitle}</p>
