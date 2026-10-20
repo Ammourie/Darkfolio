@@ -1,10 +1,12 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import { Toaster } from "@/components/ui/toaster"
+import { Toaster } from "@/components/ui/toaster";
+import { DocumentLangSync } from '@/components/document-lang-sync';
+import { cookies, headers } from 'next/headers';
 import { getPortfolioData } from '@/lib/data';
-import { Language } from '@/types/portfolio';
-import { isLanguage } from './page';
+import { isLanguage, languageDirection, LANG_COOKIE } from '@/lib/language';
+import type { Language } from '@/types/portfolio';
 
 const inter = Inter({
   subsets: ['latin', 'latin-ext'], // Add latin-ext for better language support
@@ -24,19 +26,25 @@ export const metadata: Metadata = {
     'Portfolio of Mohammed Al-Ammourie — software developer and Flutter specialist building mobile and web products.',
 };
 
+async function resolveRequestLanguage(): Promise<Language> {
+  const headerStore = await headers();
+  const fromHeader = headerStore.get('x-portfolio-lang');
+  if (isLanguage(fromHeader)) return fromHeader;
+
+  const cookieStore = await cookies();
+  const fromCookie = cookieStore.get(LANG_COOKIE)?.value;
+  if (isLanguage(fromCookie)) return fromCookie;
+
+  return 'en';
+}
+
 export default async function RootLayout({
   children,
-  searchParams
 }: Readonly<{
   children: React.ReactNode;
-  searchParams?: { [key: string]: string | string[] | undefined };
 }>) {
-
-  const lang = isLanguage(searchParams?.lang) ? searchParams.lang : 'en' as Language;
-
-  // Support multiple RTL languages if needed in the future
-  const rtlLanguages: Language[] = ['ar'];
-  const dir = rtlLanguages.includes(lang) ? 'rtl' : 'ltr';
+  const lang = await resolveRequestLanguage();
+  const dir = languageDirection(lang);
 
   await getPortfolioData(lang);
 
@@ -46,6 +54,7 @@ export default async function RootLayout({
         className={`font-sans antialiased ${dir === 'rtl' ? 'rtl' : 'ltr'}`}
         suppressHydrationWarning={true}
       >
+        <DocumentLangSync />
         {children}
         <Toaster />
       </body>

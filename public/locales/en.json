@@ -118,6 +118,9 @@
     "tags": "Tags",
     "main_image": "Main Image",
     "gallery_images": "Gallery Images",
-    "date": "Date"
+    "date": "Date",
+    "google_play": "Google Play",
+    "apple_store": "App Store",
+    "source_code": "Source code"
   }
 }

@@ -119,7 +119,7 @@ export function AppHeader({
       <header className="pointer-events-none fixed left-0 right-0 top-0 z-[100] flex justify-center px-4 pt-3">
         <div
           className={cn(
-            'pointer-events-auto inline-flex max-w-[calc(100vw-2rem)] items-center gap-1 rounded-full border px-2 py-1.5 transition-surface',
+            'site-header-pill pointer-events-auto inline-flex max-w-[calc(100vw-2rem)] items-center gap-1 rounded-full border px-2 py-1.5 transition-surface',
             isScrolled
               ? 'border-white/[0.1] bg-background/95 shadow-[0_8px_32px_rgba(0,0,0,0.55)] backdrop-blur-xl'
               : 'border-white/[0.08] bg-background/80 backdrop-blur-lg'
@@ -199,7 +199,7 @@ export function AppHeader({
                   variant={activeSection === item.id ? 'secondary' : 'ghost'}
                   size="sm"
                   onClick={() => scrollToSection(item.id)}
-                  className="justify-start rounded-xl"
+                  className="justify-start text-start rounded-xl"
                   aria-current={activeSection === item.id ? 'true' : undefined}
                 >
                   {item.label}

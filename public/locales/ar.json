@@ -118,6 +118,9 @@
     "tags": "العلامات",
     "main_image": "الصورة الرئيسية",
     "gallery_images": "صور المعرض",
-    "date": "التاريخ"
+    "date": "التاريخ",
+    "google_play": "Google Play",
+    "apple_store": "App Store",
+    "source_code": "الكود المصدري"
   }
 }

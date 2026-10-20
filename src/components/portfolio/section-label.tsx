@@ -12,7 +12,7 @@ export function SectionLabel({ title, subtitle, className, id }: SectionLabelPro
   const showSubtitle = Boolean(subtitle?.trim()) && subtitle!.trim() !== title.trim();
 
   return (
-    <div id={id} className={cn('mb-8 md:mb-10', className)}>
+    <div id={id} className={cn('mb-8 text-start md:mb-10', className)}>
       {showSubtitle ? (
         <p className="text-xs font-semibold uppercase tracking-[0.25em] text-primary/80">{subtitle}</p>
       ) : null}

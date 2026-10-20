@@ -105,7 +105,7 @@ export function PortfolioBentoHome({
                 aria-hidden
                 className="pointer-events-none absolute -top-16 end-0 h-40 w-40 rounded-full bg-primary/10 blur-3xl"
               />
-              <p className="relative flex-1 text-base leading-[1.75] text-muted-foreground md:text-lg md:leading-[1.8]">
+              <p className="relative flex-1 text-start text-base leading-[1.75] text-muted-foreground md:text-lg md:leading-[1.8]">
                 {data.about.description}
               </p>
             </BentoCard>

@@ -85,8 +85,9 @@ export async function ProjectCard({
               </span>
             ))}
           </div>
-          <span className="mt-4 text-xs font-semibold text-primary opacity-0 transition-surface group-hover:opacity-100">
-            {data.static_strings['view_details']} →
+          <span className="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-primary opacity-0 transition-surface group-hover:opacity-100">
+            {data.static_strings['view_details']}
+            <ArrowUpRight className="h-3.5 w-3.5 rtl:-scale-x-100" aria-hidden />
           </span>
         </div>
       </BentoCard>

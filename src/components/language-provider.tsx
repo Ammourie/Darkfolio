@@ -2,6 +2,7 @@
 
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import { useSearchParams } from 'next/navigation';
+import { isLanguage, languageDirection } from '@/lib/language';
 
 interface LanguageContextType {
   currentLanguage: string;
@@ -37,6 +38,16 @@ export function LanguageProvider({ children, initialLanguage = 'en' }: LanguageP
     setCurrentLanguage(language);
     localStorage.setItem('preferred-language', language);
   };
+
+  /** Keep <html lang/dir> in sync after client navigations. */
+  useEffect(() => {
+    const lang = isLanguage(currentLanguage) ? currentLanguage : 'en';
+    const dir = languageDirection(lang);
+    document.documentElement.lang = lang;
+    document.documentElement.dir = dir;
+    document.body.classList.toggle('rtl', dir === 'rtl');
+    document.body.classList.toggle('ltr', dir === 'ltr');
+  }, [currentLanguage]);
 
   return (
     <LanguageContext.Provider value={{ currentLanguage, setLanguage }}>

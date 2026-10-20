@@ -18,6 +18,8 @@ interface ImageGalleryProps {
   images: string[];
   altPrefix: string;
   className?: string;
+  /** Tighter bento-style tiles for portfolio project pages */
+  variant?: 'default' | 'bento';
 }
 
 export function ImageViewer({ src, alt, className, children }: ImageViewerProps) {
@@ -48,7 +50,7 @@ export function ImageViewer({ src, alt, className, children }: ImageViewerProps)
   );
 }
 
-export function ImageGallery({ images, altPrefix, className }: ImageGalleryProps) {
+export function ImageGallery({ images, altPrefix, className, variant = 'default' }: ImageGalleryProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -75,29 +77,39 @@ export function ImageGallery({ images, altPrefix, className }: ImageGalleryProps
 
   return (
     <>
-      <div className={`grid grid-cols-1 sm:grid-cols-2 gap-4 ${className}`}>
+      <div
+        className={
+          variant === 'bento'
+            ? `grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 ${className ?? ''}`
+            : `grid grid-cols-1 gap-4 sm:grid-cols-2 ${className ?? ''}`
+        }
+      >
         {validImages.map((img, index) => (
-          <div
+          <button
+            type="button"
             key={index}
-            className="relative w-full h-64 rounded-lg overflow-hidden shadow-md cursor-pointer transition-transform hover:scale-105 bg-black"
+            className={
+              variant === 'bento'
+                ? 'group relative aspect-[9/19] w-full overflow-hidden rounded-xl border border-white/[0.08] bg-background/50 text-start transition-surface hover:border-primary/25 hover:shadow-[0_0_0_1px_hsl(var(--primary)/0.15)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 md:aspect-[10/16]'
+                : 'relative h-64 w-full cursor-pointer overflow-hidden rounded-lg bg-black shadow-md transition-transform hover:scale-105'
+            }
             onClick={() => openImage(index)}
+            aria-label={`${altPrefix} ${index + 1}`}
           >
-            <Image
-              src={img}
-              alt=""
-              fill
-              className="object-cover blur-md scale-110"
-              aria-hidden="true"
-            />
-            <div className="absolute inset-0 bg-blue-950/50" />
-            <Image 
-              src={img} 
-              alt={`${altPrefix} ${index + 1}`} 
-              fill 
-              className="object-contain"
-              data-ai-hint="app screenshot"
-            />
-          </div>
+            {variant === 'bento' ? (
+              <>
+                <Image src={img} alt="" fill className="object-cover opacity-25 blur-xl scale-110" aria-hidden />
+                <div className="absolute inset-0 bg-gradient-to-t from-card/80 via-transparent to-transparent" />
+                <Image src={img} alt={`${altPrefix} ${index + 1}`} fill className="object-contain p-2 transition-surface group-hover:scale-[1.02]" />
+              </>
+            ) : (
+              <>
+                <Image src={img} alt="" fill className="scale-110 object-cover blur-md" aria-hidden />
+                <div className="absolute inset-0 bg-blue-950/50" />
+                <Image src={img} alt={`${altPrefix} ${index + 1}`} fill className="object-contain" />
+              </>
+            )}
+          </button>
         ))}
       </div>
 
@@ -121,21 +133,23 @@ export function ImageGallery({ images, altPrefix, className }: ImageGalleryProps
                 <Button
                   variant="ghost"
                   size="icon"
-                  className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white"
+                  className="absolute start-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white"
                   onClick={prevImage}
+                  aria-label="Previous image"
                 >
-                  <ChevronLeft className="h-6 w-6" />
+                  <ChevronLeft className="h-6 w-6 rtl:rotate-180" />
                 </Button>
-                
+
                 <Button
                   variant="ghost"
                   size="icon"
-                  className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white"
+                  className="absolute end-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white"
                   onClick={nextImage}
+                  aria-label="Next image"
                 >
-                  <ChevronRight className="h-6 w-6" />
+                  <ChevronRight className="h-6 w-6 rtl:rotate-180" />
                 </Button>
-                
+
                 <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/50 text-white px-3 py-1 rounded-full text-sm">
                   {currentIndex + 1} / {validImages.length}
                 </div>

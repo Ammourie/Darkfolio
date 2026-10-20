@@ -2,15 +2,14 @@ import { getPortfolioData } from '@/lib/data';
 import { BackgroundDecorations } from '@/components/background-decorations';
 import { ClientPageWrapper } from '@/components/client-page-wrapper';
 import { PortfolioBentoHome } from '@/components/portfolio/portfolio-bento-home';
-import { Language } from '@/types/portfolio';
+import { isLanguage } from '@/lib/language';
+import type { Language } from '@/types/portfolio';
 
 interface PageProps {
   searchParams: { [key: string]: string | string[] | undefined };
 }
 
-export function isLanguage(lang: unknown): lang is Language {
-  return lang === 'en' || lang === 'ar';
-}
+export { isLanguage };
 
 export default async function Home({ searchParams }: PageProps) {
   const params = await searchParams;

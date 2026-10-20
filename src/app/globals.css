@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,6 +6,19 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+[dir='rtl'] body {
+  font-family: 'Noto Sans Arabic', 'Segoe UI', Tahoma, Arial, sans-serif;
+}
+
+[dir='rtl'] .font-headline {
+  font-family: 'Noto Sans Arabic', 'Poppins', system-ui, sans-serif;
+}
+
+/** Mirror header controls in RTL (logo ↔ language). */
+[dir='rtl'] .site-header-pill {
+  flex-direction: row-reverse;
 }
 
 @layer base {
