@@ -1,0 +1,50 @@
+{
+  "slug": "darbak-customer-app",
+  "order": 3,
+  "company": "Osous Technology LLC",
+  "google_play": "https://play.google.com/store/apps/details?id=com.osoustech.maria",
+  "apple_store": "https://apps.apple.com/kg/app/darbak/id6752897584",
+  "main_image": "/projects/darbak-customer-app/main.webp",
+  "gallery_images": [
+    "/projects/darbak-customer-app/gallery/01.webp",
+    "/projects/darbak-customer-app/gallery/02.webp",
+    "/projects/darbak-customer-app/gallery/03.webp",
+    "/projects/darbak-customer-app/gallery/04.webp",
+    "/projects/darbak-customer-app/gallery/05.webp",
+    "/projects/darbak-customer-app/gallery/06.webp",
+    "/projects/darbak-customer-app/gallery/07.webp",
+    "/projects/darbak-customer-app/gallery/08.webp"
+  ],
+  "locales": {
+    "en": {
+      "title": "Darbak – Customer Application",
+      "description_short": "A multi-service transportation app allowing users to request rides, deliveries, and towing services.",
+      "description_long": "Darbak is a Flutter-based transportation and on-demand services application that enables users to request taxi rides, goods delivery, and towing services through a single platform. The app focuses on simplicity, fast booking, real-time tracking, and seamless communication between customers and drivers, providing a reliable urban mobility experience.",
+      "tags": [
+        "Flutter",
+        "Transportation",
+        "Taxi Service",
+        "Delivery",
+        "Live Tracking",
+        "Google Maps",
+        "Mobile App"
+      ],
+      "date": "2025"
+    },
+    "ar": {
+      "title": "دربك – تطبيق المستخدم",
+      "description_short": "تطبيق نقل متعدد الخدمات يتيح للمستخدمين طلب سيارات الأجرة، التوصيل، وخدمات السحب.",
+      "description_long": "دربك هو تطبيق نقل وخدمات عند الطلب تم تطويره باستخدام Flutter، يتيح للمستخدمين طلب سيارات الأجرة، توصيل البضائع، وخدمات سحب المركبات من خلال منصة واحدة. يركز التطبيق على سهولة الاستخدام، سرعة الحجز، التتبع في الوقت الفعلي، والتواصل السلس بين المستخدمين والسائقين لتقديم تجربة تنقل موثوقة.",
+      "tags": [
+        "Flutter",
+        "النقل",
+        "سيارات الأجرة",
+        "التوصيل",
+        "التتبع المباشر",
+        "خرائط جوجل",
+        "تطبيق الهاتف"
+      ],
+      "date": "2025"
+    }
+  }
+}

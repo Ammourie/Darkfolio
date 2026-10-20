@@ -1,0 +1,47 @@
+{
+  "slug": "fashion-modular-ecommerce-application",
+  "order": 5,
+  "company": "Osous Technology LLC",
+  "main_image": "/projects/fashion-modular-ecommerce-application/main.png",
+  "gallery_images": [
+    "/projects/fashion-modular-ecommerce-application/gallery/01.png",
+    "/projects/fashion-modular-ecommerce-application/gallery/02.png",
+    "/projects/fashion-modular-ecommerce-application/gallery/03.png",
+    "/projects/fashion-modular-ecommerce-application/gallery/04.png",
+    "/projects/fashion-modular-ecommerce-application/gallery/05.png",
+    "/projects/fashion-modular-ecommerce-application/gallery/06.png",
+    "/projects/fashion-modular-ecommerce-application/gallery/07.png",
+    "/projects/fashion-modular-ecommerce-application/gallery/08.png",
+    "/projects/fashion-modular-ecommerce-application/gallery/09.png"
+  ],
+  "locales": {
+    "en": {
+      "title": "Fashion – Modular eCommerce Application",
+      "description_short": "A flexible modular eCommerce platform for web and mobile that streamlines online store creation and deployment.",
+      "description_long": "Fashion represents a cutting-edge modular eCommerce platform designed for both web and mobile environments, engineered to revolutionize the process of creating and deploying online stores. The platform features a flexible, component-based architecture that enables rapid customization and deployment of eCommerce applications tailored to diverse business requirements. With its modular design approach, Fashion allows businesses to quickly adapt their online presence, scale their operations efficiently, and customize their digital storefronts without extensive development overhead. The platform serves as a comprehensive foundation for building robust eCommerce solutions that can evolve with changing business needs. My contribution focused on developing the mobile section of the platform, ensuring the application framework is highly adaptable and easily customizable for building mobile eCommerce applications quickly and efficiently.",
+      "tags": [
+        "Flutter",
+        "eCommerce",
+        "Modular Architecture",
+        "Web Platform",
+        "Mobile Platform",
+        "Customizable Framework"
+      ],
+      "date": "July 2024"
+    },
+    "ar": {
+      "title": "فاشن - تطبيق التجارة الإلكترونية المعياري",
+      "description_short": "منصة تجارة إلكترونية معيارية مرنة للويب والهاتف المحمول تبسط إنشاء ونشر المتاجر الإلكترونية.",
+      "description_long": "فاشن يمثل منصة تجارة إلكترونية معيارية متطورة مصممة لبيئات الويب والهاتف المحمول، مهندسة لثورة في عملية إنشاء ونشر المتاجر الإلكترونية. تتميز المنصة بهيكل مرن قائم على المكونات يمكن من التخصيص السريع ونشر تطبيقات التجارة الإلكترونية المصممة خصيصاً لمتطلبات الأعمال المتنوعة. بفضل نهج التصميم المعياري، تسمح فاشن للشركات بالتكيف السريع مع وجودها الرقمي وتوسيع عملياتها بكفاءة وتخصيص واجهات متاجرها الرقمية دون عبء تطوير واسع. تخدم المنصة كأساس شامل لبناء حلول تجارة إلكترونية قوية يمكن أن تتطور مع احتياجات الأعمال المتغيرة. تركزت مساهمتي في تطوير قسم الهاتف المحمول من المنصة، مما يضمن أن إطار عمل التطبيق قابل للتكيف بدرجة عالية وسهل التخصيص لبناء تطبيقات التجارة الإلكترونية للهاتف المحمول بسرعة وكفاءة.",
+      "tags": [
+        "Flutter",
+        "التجارة الإلكترونية",
+        "الهيكل المعياري",
+        "منصة الويب",
+        "منصة الهاتف المحمول",
+        "إطار عمل قابل للتخصيص"
+      ],
+      "date": "يوليو 2024"
+    }
+  }
+}

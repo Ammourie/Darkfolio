@@ -11,6 +11,7 @@ const localesDir = path.join(root, 'public', 'locales');
 const projectsDir = path.join(root, 'public', 'projects');
 
 function pickStoreLinks(project) {
+  if (!project) return {};
   const google_play =
     project.google_play ?? project.store_links?.google_play ?? undefined;
   const apple_store =
@@ -44,13 +45,15 @@ async function main() {
       null;
 
     const slug = enP.slug;
-    const stores = pickStoreLinks(enP.google_play ? enP : { ...enP, ...pickStoreLinks(arP ?? {}) });
+    const stores = { ...pickStoreLinks(arP), ...pickStoreLinks(enP) };
 
     const file = {
       slug,
       order: i,
       company: enP.company ?? arP?.company,
-      ...pickStoreLinks(enP),
+      google_play: stores.google_play,
+      apple_store: stores.apple_store,
+      source_code_url: stores.source_code_url,
       main_image: enP.main_image ?? '',
       gallery_images: enP.gallery_images ?? [],
       locales: {
@@ -58,9 +61,6 @@ async function main() {
         ar: localeSlice(arP) ?? localeSlice(enP),
       },
     };
-
-    if (!file.google_play && stores.google_play) file.google_play = stores.google_play;
-    if (!file.apple_store && stores.apple_store) file.apple_store = stores.apple_store;
 
     const outDir = path.join(projectsDir, slug);
     await fs.mkdir(outDir, { recursive: true });

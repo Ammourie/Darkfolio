@@ -1,0 +1,51 @@
+{
+  "slug": "epihope-epilepsy-patients-health-tracking-application",
+  "order": 6,
+  "company": "Osous Technology LLC",
+  "main_image": "/projects/epihope-epilepsy-patients-health-tracking-application/main.png",
+  "gallery_images": [
+    "/projects/epihope-epilepsy-patients-health-tracking-application/gallery/01.png",
+    "/projects/epihope-epilepsy-patients-health-tracking-application/gallery/02.png",
+    "/projects/epihope-epilepsy-patients-health-tracking-application/gallery/03.png",
+    "/projects/epihope-epilepsy-patients-health-tracking-application/gallery/04.png",
+    "/projects/epihope-epilepsy-patients-health-tracking-application/gallery/05.png",
+    "/projects/epihope-epilepsy-patients-health-tracking-application/gallery/06.png",
+    "/projects/epihope-epilepsy-patients-health-tracking-application/gallery/07.png",
+    "/projects/epihope-epilepsy-patients-health-tracking-application/gallery/08.png",
+    "/projects/epihope-epilepsy-patients-health-tracking-application/gallery/09.png",
+    "/projects/epihope-epilepsy-patients-health-tracking-application/gallery/10.png",
+    "/projects/epihope-epilepsy-patients-health-tracking-application/gallery/11.png",
+    "/projects/epihope-epilepsy-patients-health-tracking-application/gallery/12.png",
+    "/projects/epihope-epilepsy-patients-health-tracking-application/gallery/13.png"
+  ],
+  "locales": {
+    "en": {
+      "title": "EpiHope – Epilepsy Patients Health Tracking Application",
+      "description_short": "Comprehensive healthcare application for epilepsy patients and doctors with health tracking, medication management, and research access.",
+      "description_long": "EpiHope is a sophisticated healthcare management application specifically designed to support epilepsy patients and medical professionals in effectively managing health information and medication regimens. The platform features two specialized portals: the Doctor's Portal provides healthcare professionals with access to the latest medication research articles and cutting-edge epilepsy-related studies, keeping them informed about treatment advances; the Patient's Portal empowers patients with access to the same research materials while offering comprehensive tools for tracking health episodes, monitoring symptoms, and managing medication schedules with automated reminder systems. The project encompasses an advanced Admin Dashboard built with Next.js, providing administrators with powerful content management capabilities to maintain and update the platform's extensive medical resources. My contribution involved collaborating on the admin dashboard development, creating comprehensive article management functionality including creation, deletion, editing, and publishing features, while also developing the complete patient-side features in the Flutter application, focusing on health episode tracking, medication management, and reminder systems to enhance patient care and treatment adherence.",
+      "tags": [
+        "Flutter",
+        "Next.js",
+        "Healthcare",
+        "Medical Management",
+        "Admin Dashboard",
+        "Patient Care"
+      ],
+      "date": "Aug 2024"
+    },
+    "ar": {
+      "title": "إيبي هوب - تطبيق تتبع صحة مرضى الصرع",
+      "description_short": "تطبيق رعاية صحية شامل لمرضى الصرع والأطباء مع تتبع الصحة وإدارة الأدوية والوصول للأبحاث.",
+      "description_long": "إيبي هوب هو تطبيق إدارة رعاية صحية متطور مصمم خصيصاً لدعم مرضى الصرع والمتخصصين الطبيين في إدارة المعلومات الصحية وأنظمة الأدوية بفعالية. تتميز المنصة ببوابتين متخصصتين: بوابة الطبيب توفر للمتخصصين في الرعاية الصحية الوصول لأحدث مقالات البحث في الأدوية ودراسات الصرع المتطورة، مما يبقيهم مطلعين على تطورات العلاج؛ بوابة المريض تمكن المرضى من الوصول لنفس المواد البحثية بينما تقدم أدوات شاملة لتتبع النوبات الصحية ومراقبة الأعراض وإدارة جداول الأدوية مع أنظمة تذكير آلية. يشمل المشروع لوحة تحكم إدارية متقدمة مبنية بـ Next.js، توفر للمديرين قدرات إدارة محتوى قوية للحفاظ على موارد المنصة الطبية الواسعة وتحديثها. تركزت مساهمتي في التعاون على تطوير لوحة التحكم الإدارية، وإنشاء وظائف إدارة المقالات الشاملة بما في ذلك الإنشاء والحذف والتحرير والنشر، بالإضافة إلى تطوير ميزات جانب المريض الكاملة في تطبيق Flutter، مع التركيز على تتبع النوبات الصحية وإدارة الأدوية وأنظمة التذكير لتعزيز رعاية المرضى والالتزام بالعلاج.",
+      "tags": [
+        "Flutter",
+        "Next.js",
+        "الرعاية الصحية",
+        "الإدارة الطبية",
+        "لوحة التحكم الإدارية",
+        "رعاية المرضى"
+      ],
+      "date": "أغسطس 2024"
+    }
+  }
+}

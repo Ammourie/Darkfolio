@@ -1,5 +1,5 @@
 /**
- * Downloads remote project images into public/projects/{slug}/ and updates locale JSON.
+ * Downloads remote project images into public/projects/{slug}/ and updates project.json.
  */
 import fs from 'fs/promises';
 import path from 'path';
@@ -7,8 +7,8 @@ import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
-const localesDir = path.join(root, 'public', 'locales');
 const projectsPublicDir = path.join(root, 'public', 'projects');
+const PROJECT_FILE = 'project.json';
 
 const REMOTE = /^https?:\/\//i;
 
@@ -31,7 +31,6 @@ function extFromContentType(type) {
   return 'jpg';
 }
 
-/** Fetch image bytes and resolved file extension. */
 async function downloadImage(url) {
   const res = await fetch(url, { redirect: 'follow' });
   if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
@@ -44,9 +43,7 @@ async function ensureDir(dir) {
   await fs.mkdir(dir, { recursive: true });
 }
 
-/** Mirror one project's images to disk; return local paths. */
-async function localizeProject(project) {
-  const { slug } = project;
+async function localizeProjectManifest(slug, project) {
   const projectDir = path.join(projectsPublicDir, slug);
   const galleryDir = path.join(projectDir, 'gallery');
 
@@ -81,45 +78,33 @@ async function localizeProject(project) {
   return { ...project, main_image, gallery_images };
 }
 
-async function updateLocaleFile(fileName, localizedBySlug) {
-  const filePath = path.join(localesDir, fileName);
-  const data = JSON.parse(await fs.readFile(filePath, 'utf8'));
-  if (!Array.isArray(data.projects)) return;
-
-  data.projects = data.projects.map((p) => {
-    const localized = localizedBySlug.get(p.slug);
-    if (!localized) return p;
-    return {
-      ...p,
-      main_image: localized.main_image,
-      gallery_images: localized.gallery_images,
-    };
-  });
-
-  await fs.writeFile(filePath, `${JSON.stringify(data, null, 2)}\n`, 'utf8');
-  console.log(`Updated ${fileName}`);
-}
-
 async function main() {
-  const enPath = path.join(localesDir, 'en.json');
-  const en = JSON.parse(await fs.readFile(enPath, 'utf8'));
-  const localizedBySlug = new Map();
+  const entries = await fs.readdir(projectsPublicDir, { withFileTypes: true });
+  for (const entry of entries) {
+    if (!entry.isDirectory()) continue;
+    const slug = entry.name;
+    const manifestPath = path.join(projectsPublicDir, slug, PROJECT_FILE);
+    try {
+      await fs.access(manifestPath);
+    } catch {
+      continue;
+    }
 
-  for (const project of en.projects || []) {
-    console.log(`\n${project.slug}`);
+    const project = JSON.parse(await fs.readFile(manifestPath, 'utf8'));
     const hasRemote =
       (project.main_image && REMOTE.test(project.main_image)) ||
       (project.gallery_images || []).some((u) => u && REMOTE.test(u));
+
+    console.log(`\n${slug}`);
     if (!hasRemote) {
-      localizedBySlug.set(project.slug, project);
       console.log('  (no remote images)');
       continue;
     }
-    localizedBySlug.set(project.slug, await localizeProject(project));
+
+    const updated = await localizeProjectManifest(slug, project);
+    await fs.writeFile(manifestPath, `${JSON.stringify(updated, null, 2)}\n`, 'utf8');
   }
 
-  await updateLocaleFile('en.json', localizedBySlug);
-  await updateLocaleFile('ar.json', localizedBySlug);
   console.log('\nDone.');
 }
 

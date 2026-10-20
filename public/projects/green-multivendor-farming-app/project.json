@@ -1,0 +1,52 @@
+{
+  "slug": "green-multivendor-farming-app",
+  "order": 7,
+  "company": "Osous Technology LLC",
+  "google_play": "https://play.google.com/store/apps/details?id=com.osoustech.greenApp",
+  "apple_store": "https://apps.apple.com/kg/app/%D8%A3%D8%AE%D8%B6%D8%B1-%D9%84%D9%84%D8%B2%D8%B1%D8%A7%D8%B9%D8%A9/id6748577762",
+  "main_image": "/projects/green-multivendor-farming-app/main.webp",
+  "gallery_images": [
+    "/projects/green-multivendor-farming-app/gallery/01.webp",
+    "/projects/green-multivendor-farming-app/gallery/02.webp",
+    "/projects/green-multivendor-farming-app/gallery/03.webp",
+    "/projects/green-multivendor-farming-app/gallery/04.webp",
+    "/projects/green-multivendor-farming-app/gallery/05.webp",
+    "/projects/green-multivendor-farming-app/gallery/06.webp",
+    "/projects/green-multivendor-farming-app/gallery/07.webp",
+    "/projects/green-multivendor-farming-app/gallery/08.webp"
+  ],
+  "locales": {
+    "en": {
+      "title": "Green – Multivendor Farming Application",
+      "description_short": "A dual-role multivendor app for farmers and hobbyists to buy farming tools, seeds, and equipment with tailored content for each user type.",
+      "description_long": "Green is a Flutter-based multivendor eCommerce platform designed for the agricultural sector, catering to both farmers and hobbyists. The app provides two distinct user experiences: Farmers can browse vendors and products relevant to professional agriculture, such as seeds, farming equipment, and specialized tools; Hobbyists can explore vendors and products more suited to small-scale or home farming projects. Both user types can add products to their cart, proceed to checkout, and view their order history. The platform ensures personalized content visibility, allowing each user type to see products and offers that are most relevant to their needs, creating a more engaging and efficient shopping experience in the farming industry.",
+      "tags": [
+        "Flutter",
+        "eCommerce",
+        "Multivendor",
+        "Agriculture",
+        "Farming Equipment",
+        "Seeds",
+        "Dual User Roles",
+        "B2C Platform"
+      ],
+      "date": "June 29, 2025 - July 20, 2025"
+    },
+    "ar": {
+      "title": "جرين – تطبيق زراعي متعدد البائعين",
+      "description_short": "تطبيق متعدد البائعين يتيح للمزارعين والهواة شراء الأدوات الزراعية والبذور والمعدات مع محتوى مخصص لكل نوع مستخدم.",
+      "description_long": "جرين هو منصة تجارة إلكترونية متعددة البائعين تم تطويرها باستخدام Flutter ومخصصة للقطاع الزراعي، حيث تخدم المزارعين والهواة على حد سواء. يوفر التطبيق تجربتين مختلفتين للمستخدمين: المزارعون يمكنهم تصفح البائعين والمنتجات المتعلقة بالزراعة الاحترافية مثل البذور والمعدات الزراعية والأدوات المتخصصة، بينما يمكن للهواة استكشاف البائعين والمنتجات الموجهة للمشاريع الزراعية الصغيرة أو المنزلية. يمكن لكلا النوعين إضافة المنتجات إلى السلة، إتمام عملية الشراء، وعرض سجل الطلبات. يعتمد النظام على تخصيص عرض المنتجات لكل فئة مستخدم، مما يخلق تجربة تسوق أكثر تميزاً وفعالية في مجال الزراعة.",
+      "tags": [
+        "Flutter",
+        "تجارة إلكترونية",
+        "متعدد البائعين",
+        "زراعة",
+        "معدات زراعية",
+        "بذور",
+        "أدوار مستخدمين مزدوجة",
+        "منصة B2C"
+      ],
+      "date": "29 يونيو 2025 - 20 يوليو 2025"
+    }
+  }
+}

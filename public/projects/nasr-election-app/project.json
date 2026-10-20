@@ -1,0 +1,44 @@
+{
+  "slug": "nasr-election-app",
+  "order": 2,
+  "company": "Osous Technology LLC",
+  "google_play": "https://play.google.com/store/apps/details?id=com.osoustech.electionApp",
+  "main_image": "/projects/nasr-election-app/main.jpg",
+  "gallery_images": [
+    "/projects/nasr-election-app/gallery/01.jpg",
+    "/projects/nasr-election-app/gallery/02.jpg",
+    "/projects/nasr-election-app/gallery/03.jpg",
+    "/projects/nasr-election-app/gallery/04.jpg",
+    "/projects/nasr-election-app/gallery/05.jpg"
+  ],
+  "locales": {
+    "en": {
+      "title": "Nasr Election App",
+      "description_short": "An app that simplifies registration and tracking of voter data at polling stations for election agents.",
+      "description_long": "The Nasr app makes it easier for election agents to register and track voter data at their polling stations. The app supports adding new voters with their full details and allows for editing or deleting information when necessary. It features a basic function for determining each voter's voting status (voted/did not vote) via a quick and straightforward option. Its simple interface is suitable for field work and ensures immediate, seamless data updates, making it an ideal tool for monitoring electoral processes accurately and quickly.",
+      "tags": [
+        "Election Management",
+        "Voter Tracking",
+        "Mobile App",
+        "Data Management",
+        "Field Work",
+        "Real-time Updates"
+      ],
+      "date": "May 15, 2025 - July 31, 2025"
+    },
+    "ar": {
+      "title": "تطبيق انتخابات نصر",
+      "description_short": "تطبيق يبسط تسجيل وتتبع بيانات الناخبين في مراكز الاقتراع لوكلاء الانتخابات.",
+      "description_long": "تطبيق نصر يسهل على وكلاء الانتخابات تسجيل وتتبع بيانات الناخبين في مراكز الاقتراع الخاصة بهم. يدعم التطبيق إضافة ناخبين جدد بتفاصيلهم الكاملة ويسمح بتحرير أو حذف المعلومات عند الضرورة. يتميز بوظيفة أساسية لتحديد حالة التصويت لكل ناخب (صوت/لم يصوت) عبر خيار سريع ومباشر. واجهته البسيطة مناسبة للعمل الميداني وتضمن تحديثات البيانات الفورية والسلسة، مما يجعله أداة مثالية لمراقبة العمليات الانتخابية بدقة وسرعة.",
+      "tags": [
+        "إدارة الانتخابات",
+        "تتبع الناخبين",
+        "تطبيق الهاتف",
+        "إدارة البيانات",
+        "العمل الميداني",
+        "التحديثات الفورية"
+      ],
+      "date": "15 مايو 2025 - 31 يوليو 2025"
+    }
+  }
+}

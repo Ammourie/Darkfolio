@@ -1,0 +1,47 @@
+{
+  "slug": "lamasat-furniture-ecommerce-app",
+  "order": 8,
+  "company": "Osous Technology LLC",
+  "google_play": "https://play.google.com/store/apps/details?id=com.osoustech.lamasat",
+  "apple_store": "https://apps.apple.com/kg/app/lamasat-design/id6752251547",
+  "main_image": "/projects/lamasat-furniture-ecommerce-app/main.webp",
+  "gallery_images": [
+    "/projects/lamasat-furniture-ecommerce-app/gallery/01.webp",
+    "/projects/lamasat-furniture-ecommerce-app/gallery/02.webp",
+    "/projects/lamasat-furniture-ecommerce-app/gallery/03.webp",
+    "/projects/lamasat-furniture-ecommerce-app/gallery/04.webp",
+    "/projects/lamasat-furniture-ecommerce-app/gallery/05.webp"
+  ],
+  "locales": {
+    "en": {
+      "title": "Lamasat – Furniture eCommerce Application",
+      "description_short": "A furniture eCommerce platform with dual account types for regular users and designers, offering browsing, purchasing, and custom request features.",
+      "description_long": "Lamasat is a Flutter-based eCommerce application dedicated to housing and interior furniture. It offers two account types: Regular Users, who can explore furniture collections, view product details, add items to their cart, proceed to checkout, and track orders; and Designers, who have all the same capabilities as regular users, plus the ability to request specific custom products by attaching reference images and descriptions. This dual-role system enables both standard consumers and professional designers to shop and collaborate more effectively, creating a flexible marketplace for furnishing needs.",
+      "tags": [
+        "Flutter",
+        "eCommerce",
+        "Furniture",
+        "Interior Design",
+        "Custom Requests",
+        "Dual User Roles",
+        "B2C Platform"
+      ],
+      "date": "July 20, 2025 - August 3, 2025"
+    },
+    "ar": {
+      "title": "لمسات – تطبيق تجارة إلكترونية للأثاث",
+      "description_short": "منصة تجارة إلكترونية للأثاث مع حسابين للمستخدمين (عادي ومصمم) توفر التصفح، الشراء، وطلبات المنتجات المخصصة.",
+      "description_long": "لمسات هو تطبيق تجارة إلكترونية تم تطويره باستخدام Flutter ومخصص للأثاث المنزلي والتصاميم الداخلية. يوفر التطبيق نوعين من الحسابات: المستخدم العادي الذي يمكنه تصفح المنتجات، عرض تفاصيلها، إضافتها إلى السلة، إتمام الشراء، وتتبع الطلبات؛ والمصمم الذي يتمتع بجميع مزايا المستخدم العادي بالإضافة إلى إمكانية طلب منتجات مخصصة عن طريق إرفاق صورة ووصف للمنتج المطلوب. يهدف هذا النظام المزدوج إلى تلبية احتياجات المستهلكين العاديين والمصممين المحترفين، مما يخلق سوقاً مرناً وفعّالاً لتلبية متطلبات الأثاث والتصميم.",
+      "tags": [
+        "Flutter",
+        "تجارة إلكترونية",
+        "أثاث",
+        "تصميم داخلي",
+        "طلبات مخصصة",
+        "أدوار مستخدمين مزدوجة",
+        "منصة B2C"
+      ],
+      "date": "20 يوليو 2025 - 3 أغسطس 2025"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "slug": "border-ports-app",
+  "order": 0,
+  "company": "Osous Technology LLC",
+  "google_play": "https://play.google.com/store/apps/details?id=com.osousTech.borderPorts",
+  "main_image": "/projects/border-ports-app/main.jpg",
+  "gallery_images": [
+    "/projects/border-ports-app/gallery/01.jpg",
+    "/projects/border-ports-app/gallery/02.jpg",
+    "/projects/border-ports-app/gallery/03.jpg",
+    "/projects/border-ports-app/gallery/04.jpg",
+    "/projects/border-ports-app/gallery/05.jpg",
+    "/projects/border-ports-app/gallery/06.jpg"
+  ],
+  "locales": {
+    "en": {
+      "title": "Border Ports App",
+      "description_short": "An app for authorized personnel to monitor and manage operations at border ports efficiently.",
+      "description_long": "The Border Ports app is a specialized platform designed for authorized personnel to monitor and manage operations at border ports. It provides real-time insights into port activities, including cargo tracking, revenue monitoring, and operational status across multiple border locations. Key features include centralized data access, customizable dashboards for different roles, and secure reporting tools to ensure smooth and efficient port management.",
+      "tags": [
+        "Port Management",
+        "Border Security",
+        "Cargo Tracking",
+        "Real-time Monitoring",
+        "Mobile App",
+        "Data Analytics"
+      ],
+      "date": "May 15, 2025 - June 15, 2025"
+    },
+    "ar": {
+      "title": "تطبيق المنافذ الحدودية",
+      "description_short": "تطبيق للموظفين المخولين لمراقبة وإدارة العمليات في المنافذ الحدودية بكفاءة.",
+      "description_long": "تطبيق المنافذ الحدودية هو منصة متخصصة مصممة للموظفين المخولين لمراقبة وإدارة العمليات في المنافذ الحدودية. يوفر رؤى في الوقت الفعلي حول أنشطة الموانئ، بما في ذلك تتبع البضائع ومراقبة الإيرادات والحالة التشغيلية عبر مواقع حدودية متعددة. تشمل الميزات الرئيسية الوصول المركزي للبيانات ولوحات معلومات قابلة للتخصيص لأدوار مختلفة وأدوات إعداد التقارير الآمنة لضمان إدارة الموانئ بسلاسة وكفاءة.",
+      "tags": [
+        "إدارة الموانئ",
+        "الأمن الحدودي",
+        "تتبع البضائع",
+        "المراقبة في الوقت الفعلي",
+        "تطبيق الهاتف",
+        "تحليل البيانات"
+      ],
+      "date": "15 مايو 2025 - 15 يونيو 2025"
+    }
+  }
+}

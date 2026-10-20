@@ -1,0 +1,48 @@
+{
+  "slug": "darbak-captain-app",
+  "order": 4,
+  "company": "Osous Technology LLC",
+  "google_play": "https://play.google.com/store/apps/details?id=com.osoustech.driverMaria",
+  "apple_store": "https://apps.apple.com/kg/app/darbak-captain/id6752899275",
+  "main_image": "/projects/darbak-captain-app/main.webp",
+  "gallery_images": [
+    "/projects/darbak-captain-app/gallery/01.webp",
+    "/projects/darbak-captain-app/gallery/02.webp",
+    "/projects/darbak-captain-app/gallery/03.webp",
+    "/projects/darbak-captain-app/gallery/04.webp",
+    "/projects/darbak-captain-app/gallery/05.webp",
+    "/projects/darbak-captain-app/gallery/06.webp",
+    "/projects/darbak-captain-app/gallery/07.webp",
+    "/projects/darbak-captain-app/gallery/08.webp"
+  ],
+  "locales": {
+    "en": {
+      "title": "Darbak Captain – Driver Application",
+      "description_short": "A driver-focused app enabling captains to accept rides, manage trips, and track earnings in real time.",
+      "description_long": "Darbak Captain is the driver-side Flutter application designed for Darbak service providers. Captains can receive and accept ride requests, navigate to pickup and drop-off locations using live maps, manage trip history, and monitor earnings. The app is optimized for performance, real-time updates, and ease of use for drivers operating on the Darbak platform.",
+      "tags": [
+        "Flutter",
+        "Transportation",
+        "Driver App",
+        "Live Tracking",
+        "Google Maps",
+        "Trip Management"
+      ],
+      "date": "2025"
+    },
+    "ar": {
+      "title": "دربك كابتن – تطبيق السائق",
+      "description_short": "تطبيق مخصص للسائقين لإدارة الرحلات، قبول الطلبات، ومتابعة الأرباح.",
+      "description_long": "دربك كابتن هو تطبيق Flutter مخصص لسائقي منصة دربك. يتيح للسائقين استقبال وقبول طلبات الرحلات، التنقل إلى مواقع الالتقاط والتوصيل باستخدام الخرائط المباشرة، إدارة سجل الرحلات، ومتابعة الأرباح. تم تصميم التطبيق ليكون سريعاً وسهل الاستخدام مع تحديثات فورية تناسب العمل الميداني.",
+      "tags": [
+        "Flutter",
+        "النقل",
+        "تطبيق السائق",
+        "التتبع المباشر",
+        "خرائط جوجل",
+        "إدارة الرحلات"
+      ],
+      "date": "2025"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "slug": "benz-technical-app",
+  "order": 1,
+  "company": "Osous Technology LLC",
+  "google_play": "https://play.google.com/store/apps/details?id=com.osoustech.ataaElectrician",
+  "apple_store": "https://apps.apple.com/kg/app/%D8%A8%D9%86%D8%B2-%D8%A7%D9%84%D9%81%D9%86%D9%8A/id6742101831",
+  "main_image": "/projects/benz-technical-app/main.jpg",
+  "gallery_images": [
+    "/projects/benz-technical-app/gallery/01.jpg",
+    "/projects/benz-technical-app/gallery/02.jpg",
+    "/projects/benz-technical-app/gallery/03.jpg",
+    "/projects/benz-technical-app/gallery/04.jpg",
+    "/projects/benz-technical-app/gallery/05.jpg",
+    "/projects/benz-technical-app/gallery/06.jpg",
+    "/projects/benz-technical-app/gallery/07.jpg",
+    "/projects/benz-technical-app/gallery/08.jpg"
+  ],
+  "locales": {
+    "en": {
+      "title": "Benz Technical App",
+      "description_short": "Flutter-based eCommerce app for electricians and users to browse, buy electrical products, and earn rewards.",
+      "description_long": "The Benz Technical App (also known as Ataa-Electrician App) is a Flutter-based eCommerce solution for electricians and end-users. It offers a seamless platform to explore vendor catalogs, purchase products from nearby dealers, and benefit from a rewards system. Features include search and filter options, a streamlined shopping cart, secure checkout, and unique gifting options (search, order with points, track orders), creating an enhanced and rewarding shopping experience.",
+      "tags": [
+        "Flutter",
+        "eCommerce",
+        "Electrical Products",
+        "Vendor Management",
+        "Dealer Locator",
+        "Order Tracking",
+        "Mobile App",
+        "Rewards System",
+        "B2B Platform",
+        "Gifting Features"
+      ],
+      "date": "January 2025"
+    },
+    "ar": {
+      "title": "تطبيق بنز الفني",
+      "description_short": "تطبيق تجارة إلكترونية مبني على Flutter للكهربائيين والمستخدمين لتصفح وشراء المنتجات الكهربائية وكسب المكافآت.",
+      "description_long": "تطبيق بنز الفني (المعروف أيضاً بتطبيق عطاء-الكهربائي) هو حل تجارة إلكترونية مبني على Flutter للكهربائيين والمستخدمين النهائيين. يوفر منصة سلسة لاستكشاف كتالوجات البائعين وشراء المنتجات من الموزعين القريبين والاستفادة من نظام المكافآت. تشمل الميزات خيارات البحث والتصفية وعربة تسوق مبسطة ودفع آمن وخيارات هدايا فريدة (البحث والطلب بالنقاط وتتبع الطلبات)، مما يخلق تجربة تسوق محسنة ومجزية.",
+      "tags": [
+        "Flutter",
+        "التجارة الإلكترونية",
+        "المنتجات الكهربائية",
+        "إدارة البائعين",
+        "محدد الموقع للموزعين",
+        "تتبع الطلبات",
+        "تطبيق الهاتف",
+        "نظام المكافآت",
+        "منصة B2B",
+        "ميزات الهدايا"
+      ],
+      "date": "يناير 2025"
+    }
+  }
+}
