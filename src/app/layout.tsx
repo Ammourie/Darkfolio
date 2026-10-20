@@ -12,9 +12,16 @@ const inter = Inter({
   display: 'swap', // Improves loading performance
 });
 
+const SITE_NAME = 'Mohammed Al-Ammourie';
+
 export const metadata: Metadata = {
-  title: 'Darkfolio',
-  description: 'A dark-themed portfolio for a Flutter developer.',
+  applicationName: SITE_NAME,
+  title: {
+    default: `${SITE_NAME} · Portfolio`,
+    template: `%s · ${SITE_NAME}`,
+  },
+  description:
+    'Portfolio of Mohammed Al-Ammourie — software developer and Flutter specialist building mobile and web products.',
 };
 
 export default async function RootLayout({

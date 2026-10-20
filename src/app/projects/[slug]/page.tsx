@@ -34,7 +34,7 @@ export async function generateMetadata({ params, searchParams }: Props): Promise
   }
 
   return {
-    title: `${project.title} | Darkfolio`,
+    title: project.title,
     description: project.description_short,
   };
 }
