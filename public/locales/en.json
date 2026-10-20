@@ -21,7 +21,7 @@
       "twitter": "https://x.com/Ammourie99",
       "telegram": "https://t.me/ammourie99"
     },
-    "avatar": "https://res.cloudinary.com/doujfg8db/image/upload/v1750794975/1705808828575_oopcgv.jpg"
+    "avatar": "/pfp.png"
   },
   "about": {
     "title": "About Me",
@@ -127,14 +127,14 @@
         "Mobile App",
         "Data Analytics"
       ],
-      "main_image": "https://res.cloudinary.com/doujfg8db/image/upload/v1751125137/main_q7zq3o.jpg",
+      "main_image": "/projects/border-ports-app/main.jpg",
       "gallery_images": [
-        "https://res.cloudinary.com/doujfg8db/image/upload/v1751125134/1_jh0trn.jpg",
-        "https://res.cloudinary.com/doujfg8db/image/upload/v1751125133/2_adjong.jpg",
-        "https://res.cloudinary.com/doujfg8db/image/upload/v1751125133/3_jcjrr8.jpg",
-        "https://res.cloudinary.com/doujfg8db/image/upload/v1751125134/4_cmhjz8.jpg",
-        "https://res.cloudinary.com/doujfg8db/image/upload/v1751125135/5_ujspx9.jpg",
-        "https://res.cloudinary.com/doujfg8db/image/upload/v1751125138/6_ew0xnr.jpg"
+        "/projects/border-ports-app/gallery/01.jpg",
+        "/projects/border-ports-app/gallery/02.jpg",
+        "/projects/border-ports-app/gallery/03.jpg",
+        "/projects/border-ports-app/gallery/04.jpg",
+        "/projects/border-ports-app/gallery/05.jpg",
+        "/projects/border-ports-app/gallery/06.jpg"
       ],
       "date": "May 15, 2025 - June 15, 2025",
       "company": "Osous Technology LLC",
@@ -157,16 +157,16 @@
         "B2B Platform",
         "Gifting Features"
       ],
-      "main_image": "https://res.cloudinary.com/doujfg8db/image/upload/v1751124847/main_vq6usc.jpg",
+      "main_image": "/projects/benz-technical-app/main.jpg",
       "gallery_images": [
-        "https://res.cloudinary.com/doujfg8db/image/upload/v1751124844/1_kxnbux.jpg",
-        "https://res.cloudinary.com/doujfg8db/image/upload/v1751124844/2_hfqnzd.jpg",
-        "https://res.cloudinary.com/doujfg8db/image/upload/v1751124845/3_eiucxl.jpg",
-        "https://res.cloudinary.com/doujfg8db/image/upload/v1751124846/4_c24nin.jpg",
-        "https://res.cloudinary.com/doujfg8db/image/upload/v1751124847/5_fjrx0y.jpg",
-        "https://res.cloudinary.com/doujfg8db/image/upload/v1751124846/6_zode6t.jpg",
-        "https://res.cloudinary.com/doujfg8db/image/upload/v1751124846/7_sahk7p.jpg",
-        "https://res.cloudinary.com/doujfg8db/image/upload/v1751124847/8_cp8yu0.jpg"
+        "/projects/benz-technical-app/gallery/01.jpg",
+        "/projects/benz-technical-app/gallery/02.jpg",
+        "/projects/benz-technical-app/gallery/03.jpg",
+        "/projects/benz-technical-app/gallery/04.jpg",
+        "/projects/benz-technical-app/gallery/05.jpg",
+        "/projects/benz-technical-app/gallery/06.jpg",
+        "/projects/benz-technical-app/gallery/07.jpg",
+        "/projects/benz-technical-app/gallery/08.jpg"
       ],
       "date": "January 2025",
       "company": "Osous Technology LLC",
@@ -186,13 +186,13 @@
         "Field Work",
         "Real-time Updates"
       ],
-      "main_image": "https://res.cloudinary.com/doujfg8db/image/upload/v1751125234/main_o5rzjt.jpg",
+      "main_image": "/projects/nasr-election-app/main.jpg",
       "gallery_images": [
-        "https://res.cloudinary.com/doujfg8db/image/upload/v1751125230/1_l8ehzh.jpg",
-        "https://res.cloudinary.com/doujfg8db/image/upload/v1751125231/2_enedph.jpg",
-        "https://res.cloudinary.com/doujfg8db/image/upload/v1751125232/3_f79vn5.jpg",
-        "https://res.cloudinary.com/doujfg8db/image/upload/v1751125232/4_x3t4zd.jpg",
-        "https://res.cloudinary.com/doujfg8db/image/upload/v1751125233/5_chijvb.jpg"
+        "/projects/nasr-election-app/gallery/01.jpg",
+        "/projects/nasr-election-app/gallery/02.jpg",
+        "/projects/nasr-election-app/gallery/03.jpg",
+        "/projects/nasr-election-app/gallery/04.jpg",
+        "/projects/nasr-election-app/gallery/05.jpg"
       ],
       "date": "May 15, 2025 - July 31, 2025",
       "company": "Osous Technology LLC",
@@ -212,16 +212,16 @@
         "Google Maps",
         "Mobile App"
       ],
-      "main_image": "https://play-lh.googleusercontent.com/-ck3qHFlnphREJjV-sB3ynjjFiX5z3tJJnnB4PnVpcczEUDduYwGefNnqWT6sO7_51pOoEdkxUqXzJvWHXj3KQ=w240-h480-rw",
+      "main_image": "/projects/darbak-customer-app/main.webp",
       "gallery_images": [
-        "https://play-lh.googleusercontent.com/FQ1cirtwQIAlpJk4p0Z6vMtPdEp0OJLJN8x_jW_c4JYcZmZrU52883RHuGoRnffqX3zX5DLUcoHiBdWcIgdY=w526-h296-rw",
-        "https://play-lh.googleusercontent.com/Vpos-nF82TNS14ulvb_F4r1T417an1P9Px4ThThDATuXMySjbC54RjPONwYHbsnsHfn864FRLbuvjQJfkmo6VQ=w526-h296-rw",
-        "https://play-lh.googleusercontent.com/_eJdiQIWJ0hRr0s5lu5bat4ND8zc0sVSA60H_M10XpkW-KfEpzj9E8wvQn24Y-28Ws6ltTuxOVqmSBAX7-UV=w526-h296-rw",
-        "https://play-lh.googleusercontent.com/81NLOt8wBz3mHff-whJfuGzttzn11l7J5vyhyIsnUUyh3Jb4Bm9HMr5BBNHREKsxCaeZHebXUA_v4rnuve0jRbM=w526-h296-rw",
-        "https://play-lh.googleusercontent.com/m6Gf-7Lhp976iB0xnVGOqfshxrBM7o8fUhKWSnm04MQSYLdb2pdgzWP6XSgavnTLdWaofDl32JJiDOVEkmXcaw=w526-h296-rw",
-        "https://play-lh.googleusercontent.com/1Tlo8NEsQa2lbkBbCNak7d1emrxdklM0NdWwO-oTQkYzPna6ZLf3QB1UXAn8b3N0CvAafZ6vd9r3R3x4ZjEB4A=w526-h296-rw",
-        "https://play-lh.googleusercontent.com/wf7NW3jgh-4dZamC1R6-AWmEIYShvL3wP5f1mkMDwBbnEwYpXYNCZcIhOUCYYakQzUMMxGTTg7cLjr9GnryHoQ=w526-h296-rw",
-        "https://play-lh.googleusercontent.com/P01Gdv9TEInPUkC0OWCxVUQ9Jp5xbNoyktrNX8IMNH_2-XPgiC6N_8G5b6ev2zWA9PuKfpvIYn-YC26PqBioiHo=w526-h296-rw"
+        "/projects/darbak-customer-app/gallery/01.webp",
+        "/projects/darbak-customer-app/gallery/02.webp",
+        "/projects/darbak-customer-app/gallery/03.webp",
+        "/projects/darbak-customer-app/gallery/04.webp",
+        "/projects/darbak-customer-app/gallery/05.webp",
+        "/projects/darbak-customer-app/gallery/06.webp",
+        "/projects/darbak-customer-app/gallery/07.webp",
+        "/projects/darbak-customer-app/gallery/08.webp"
       ],
       "date": "2025",
       "company": "Osous Technology LLC",
@@ -241,16 +241,16 @@
         "Google Maps",
         "Trip Management"
       ],
-      "main_image": "https://play-lh.googleusercontent.com/g-FBJmK0c-isFrH-wFr5UCkuwikVrxyCYDnqW31y6t2AqjHSJ_tc7V4kitTJ9Uh-nJkj1Wi6DAVTwUB0ota0LSo=w240-h480-rw",
+      "main_image": "/projects/darbak-captain-app/main.webp",
       "gallery_images": [
-        "https://play-lh.googleusercontent.com/uKb0M79o4aArKDjZVfW99A447Wxnf9MfOO8HnnJeGZjUm82-PeVfps0HZNPzLBZkIhBsK2Tduj0P5jGzBAXhqg=w526-h296-rw",
-        "https://play-lh.googleusercontent.com/FsE0iytn0uAgxTHTmsZzDhX_Mx8SQN_DF94moJHTR_KR2ube_WzdPWYjGBac_Ygvz8I_xnBw5LW1KlLIzG-Y5A=w526-h296-rw",
-        "https://play-lh.googleusercontent.com/_Isu-Yj6fJiGWTYhpfN2E2Jv_R1jxEYV11ymLIr2FFjoCS3z-uikQY62A_tMH9umU4P7l8eMoWA264OmymuZ=w526-h296-rw",
-        "https://play-lh.googleusercontent.com/p9vFZRuSOktGj3T-3VwdLR1PksB7jxDVDSdJTUNYOWVmAwQjQNlAJO9-gG9palP86z2b3GFAcopy0mU93uC4_Q=w526-h296-rw",
-        "https://play-lh.googleusercontent.com/N6Y58-TFovD0Q6ZVD307035BM-KG1k8GkrTS7dBgpOmJx8vaRFvgDVcdWj94xRoE75bgOSieJsTLc-WEt3CT=w526-h296-rw",
-        "https://play-lh.googleusercontent.com/QgqMsvLutbgTNYUKSb9b-47qXHnHNBaqIKK6F7e-5I09l9ZRVl8_h1wvIlyfnFbzGvs1xMyo3sI5W5mmBfKjUog=w526-h296-rw",
-        "https://play-lh.googleusercontent.com/K_i7zXeJtFb_n13x3l9QcrPpuNipRx7ZMyBD2iKP5k7IJYsRsUVSDvtjVwShl4C2nk6K0HH3wFBHRe8U0hzVTUI=w526-h296-rw",
-        "https://play-lh.googleusercontent.com/65w2_2ERuMl7YKyATIymUaxuHdfIMlb2fgrIqt5K32wqMA6hmU9Ehpzs70_GWbhVsUDaVgHODhJ16TUeUEof=w526-h296-rw"
+        "/projects/darbak-captain-app/gallery/01.webp",
+        "/projects/darbak-captain-app/gallery/02.webp",
+        "/projects/darbak-captain-app/gallery/03.webp",
+        "/projects/darbak-captain-app/gallery/04.webp",
+        "/projects/darbak-captain-app/gallery/05.webp",
+        "/projects/darbak-captain-app/gallery/06.webp",
+        "/projects/darbak-captain-app/gallery/07.webp",
+        "/projects/darbak-captain-app/gallery/08.webp"
       ],
       "date": "2025",
       "company": "Osous Technology LLC",
@@ -270,17 +270,17 @@
         "Mobile Platform",
         "Customizable Framework"
       ],
-      "main_image": "http://res.cloudinary.com/doujfg8db/image/upload/v1729818934/m6gz8txtt49gwyhdqzbg.png",
+      "main_image": "/projects/fashion-modular-ecommerce-application/main.png",
       "gallery_images": [
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1729818938/y75pyuqlmhc4pmjgssgu.png",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1729818940/fddf5mzapl5uzald199m.png",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1729818942/urqrrv2vavmibt7ubfhd.png",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1729818943/zfuqfpt6dd7a7ybbealv.png",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1729818944/ic8c46vl7jgjgtdaem2h.png",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1729818945/auravwyc3c6nbsyc6mrk.png",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1729818947/b9k1ybhrkccnednmchda.png",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1729818948/pewgxoogrlwmda6h2vdc.png",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1729818949/q2mme2bdwovciatbqaqk.png"
+        "/projects/fashion-modular-ecommerce-application/gallery/01.png",
+        "/projects/fashion-modular-ecommerce-application/gallery/02.png",
+        "/projects/fashion-modular-ecommerce-application/gallery/03.png",
+        "/projects/fashion-modular-ecommerce-application/gallery/04.png",
+        "/projects/fashion-modular-ecommerce-application/gallery/05.png",
+        "/projects/fashion-modular-ecommerce-application/gallery/06.png",
+        "/projects/fashion-modular-ecommerce-application/gallery/07.png",
+        "/projects/fashion-modular-ecommerce-application/gallery/08.png",
+        "/projects/fashion-modular-ecommerce-application/gallery/09.png"
       ],
       "date": "July 2024",
       "company": "Osous Technology LLC"
@@ -298,21 +298,21 @@
         "Admin Dashboard",
         "Patient Care"
       ],
-      "main_image": "http://res.cloudinary.com/doujfg8db/image/upload/v1729259845/cypqbttgr0uwssr1ezro.png",
+      "main_image": "/projects/epihope-epilepsy-patients-health-tracking-application/main.png",
       "gallery_images": [
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1729259846/btwydnroltgml0ayqizm.png",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1729259847/j4vcgatndaxgqync49b0.png",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1729259849/ahi5fjozkmcovsnfxmkg.png",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1729259853/kqitqemxehr0rgwe5tle.png",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1729259854/lxvkd4d48zs45r6ajwbt.png",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1729259856/wcxeoyqit889bnbioq1v.png",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1729259857/b8zo2ktuac4fwpnbzjim.png",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1729259858/alr1rssemmtw0cs2hntu.png",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1729259859/mprap3z3p7omnuvtjmfh.png",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1729259860/hngk3b8zli98sflwlger.png",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1729259861/x2y1hxb1vlbkjgjq49ai.png",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1729259862/z9yjbroascrn87lx7egc.png",
-        "http://res.cloudinary.com/doujfg8db/image/upload/v1729259863/c703ctotssxefwbkllsc.png"
+        "/projects/epihope-epilepsy-patients-health-tracking-application/gallery/01.png",
+        "/projects/epihope-epilepsy-patients-health-tracking-application/gallery/02.png",
+        "/projects/epihope-epilepsy-patients-health-tracking-application/gallery/03.png",
+        "/projects/epihope-epilepsy-patients-health-tracking-application/gallery/04.png",
+        "/projects/epihope-epilepsy-patients-health-tracking-application/gallery/05.png",
+        "/projects/epihope-epilepsy-patients-health-tracking-application/gallery/06.png",
+        "/projects/epihope-epilepsy-patients-health-tracking-application/gallery/07.png",
+        "/projects/epihope-epilepsy-patients-health-tracking-application/gallery/08.png",
+        "/projects/epihope-epilepsy-patients-health-tracking-application/gallery/09.png",
+        "/projects/epihope-epilepsy-patients-health-tracking-application/gallery/10.png",
+        "/projects/epihope-epilepsy-patients-health-tracking-application/gallery/11.png",
+        "/projects/epihope-epilepsy-patients-health-tracking-application/gallery/12.png",
+        "/projects/epihope-epilepsy-patients-health-tracking-application/gallery/13.png"
       ],
       "date": "Aug 2024",
       "company": "Osous Technology LLC"
@@ -332,16 +332,16 @@
         "Dual User Roles",
         "B2C Platform"
       ],
-      "main_image": "https://play-lh.googleusercontent.com/16yYZKkXyCKR5iJHCWogc0DuicZbNqYjR8OodPnKks97wbeIa9Vnqc9bNwloOxr4s80XD8kTSqYHYKthCNBibKA=w480-h960-rw",
+      "main_image": "/projects/green-multivendor-farming-app/main.webp",
       "gallery_images": [
-        "https://play-lh.googleusercontent.com/UwvPLLRgDgko7elu1taDF57INEum9Znozw6CNbfiDsVmo-MnTjwZX7jSpF7SFRy-Wskq92voVwgULWeBic4NSQ=w526-h296-rw",
-        "https://play-lh.googleusercontent.com/yEogVyLMZrCWuZattvpi3AE29hB1P5opaoigM0bu6q5gOUqQD9jO1S4I9splEayjkp1VPXFimsETkU7vekc9k_E=w526-h296-rw",
-        "https://play-lh.googleusercontent.com/fTgxdjkfXdVxV78nqr1UEU3HLP2DTSrldsagbMMxUXptrKElZQGHJwKDhDnyMbOYRBMciQRvuj71y1v-YfLH=w526-h296-rw",
-        "https://play-lh.googleusercontent.com/uaTDHz1CRxrEb4UREv49QKPmZAiknH1Ydwr44HqX22xYW7l8snoj9-OLbVi9y1NXHfYfpqY_rD4K75qTT5iq=w526-h296-rw",
-        "https://play-lh.googleusercontent.com/fpzAz0LfuRm_tiVPwBPXBFdc20YP-SzDy-lbHlRf8Ii0rnUZkhTre_TtH8clEHQaTFUAXHCwmV1kO75Jm098SA=w526-h296-rw",
-        "https://play-lh.googleusercontent.com/qOFDEJtXR5aWx6WkU6a26NBlP_SgoLfjls8bAyUntnqLZVIZVZVQOyQ94KMS8hHACQJtBPflkExNwrVSJgR6g_c=w526-h296-rw",
-        "https://play-lh.googleusercontent.com/FfnD5oCMbF4IFpjxwPo8IKn_U6atvfCviE_3tHry-IU0zRBnpFi-huUtPAyCenu8ruDcHMU7MtmCKOsjwMt7=w526-h296-rw",
-        "https://play-lh.googleusercontent.com/FAV1f19Ua9KUbmbji4YkoTOWJQccoTGkpp6Lyj3h-kp8zfepNou1P1tOHXJHCeQ5Nk7dSEQ_-NSRafWATrVb=w526-h296-rw"
+        "/projects/green-multivendor-farming-app/gallery/01.webp",
+        "/projects/green-multivendor-farming-app/gallery/02.webp",
+        "/projects/green-multivendor-farming-app/gallery/03.webp",
+        "/projects/green-multivendor-farming-app/gallery/04.webp",
+        "/projects/green-multivendor-farming-app/gallery/05.webp",
+        "/projects/green-multivendor-farming-app/gallery/06.webp",
+        "/projects/green-multivendor-farming-app/gallery/07.webp",
+        "/projects/green-multivendor-farming-app/gallery/08.webp"
       ],
       "date": "June 29, 2025 - July 20, 2025",
       "company": "Osous Technology LLC",
@@ -362,13 +362,13 @@
         "Dual User Roles",
         "B2C Platform"
       ],
-      "main_image": "https://play-lh.googleusercontent.com/nfyTMDWrxvB4_RFTHzpy1RoY15OWn0iQNzvoed69bRZefYeBg-C-FqG6RsN-Eja0DzVg3Ka-2EUjY0DIKAAfJA=w240-h480-rw",
+      "main_image": "/projects/lamasat-furniture-ecommerce-app/main.webp",
       "gallery_images": [
-        "https://play-lh.googleusercontent.com/FMfEpaS1TiyomTUuUWNlql7Ys1F8V_RYJO2Vh-yY0fM2h8FxPUbhNPdmxbDrq7zNzZ7DxSqe4QIphg9FuWh-2g=w2560-h1440-rw",
-        "https://play-lh.googleusercontent.com/xOKzQCIzO-AVgelFS9ZvczqAQPP0dVNVwKt6HF9egz7gUzVun6hOYQ5KvrSGH15EZ4Wgob4ClLxvtS5kVxeu=w2560-h1440-rw",
-        "https://play-lh.googleusercontent.com/_n1bMKmMSr3BGKY3kpaovukcLRv65SPf5U4SmTGR22mjtbk9MAczw3h7cbc2iw4o0e0rJhVEFZRPKD2Of1OJCQ=w2560-h1440-rw",
-        "https://play-lh.googleusercontent.com/Ps5khrGu4xQKfbhBcs2NVvrrYbi3L7egXt7wFiErRBeD251UoavrWYqDqBeZgEA2kbkHMw3DtIJAacYiYrom=w2560-h1440-rw",
-        "https://play-lh.googleusercontent.com/q9pzcva7waZgFuX9wXa_0vf-2U6YChhMlvFDKiNomVy-n-o3AOL6YXpsLEdxaIV3DFgoKFxhdOgtyGfPx2iEvw=w2560-h1440-rw"
+        "/projects/lamasat-furniture-ecommerce-app/gallery/01.webp",
+        "/projects/lamasat-furniture-ecommerce-app/gallery/02.webp",
+        "/projects/lamasat-furniture-ecommerce-app/gallery/03.webp",
+        "/projects/lamasat-furniture-ecommerce-app/gallery/04.webp",
+        "/projects/lamasat-furniture-ecommerce-app/gallery/05.webp"
       ],
       "date": "July 20, 2025 - August 3, 2025",
       "company": "Osous Technology LLC",
@@ -399,6 +399,8 @@
     "view_details": "View Details",
     "view_project": "View Project",
     "download_cv": "Download CV",
+    "download_cv_english": "CV (English)",
+    "download_cv_arabic": "CV (Arabic)",
     "view_projects": "View Projects",
     "contact_description": "Have a project in mind? Let’s talk.",
     "personal_info": "Personal info",

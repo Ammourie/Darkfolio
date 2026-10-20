@@ -3,7 +3,8 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { LanguageSwitcher } from '@/components/language-switcher';
-import { Download, Menu, X } from 'lucide-react';
+import { CvDownloads, type CvDownloadLabels } from '@/components/cv-downloads';
+import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 interface AppHeaderProps {
@@ -19,164 +20,134 @@ interface AppHeaderProps {
     cv: string;
     contact: string;
   };
+  cvLabels: CvDownloadLabels;
 }
 
-export function AppHeader({ currentLanguage, onLanguageChange, navigation }: AppHeaderProps) {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+const SECTION_IDS = ['hero', 'about', 'experience', 'education', 'skills', 'projects', 'contact'] as const;
 
-  useEffect(() => {
-    /**
-     * Toggles a more compact/solid header style after the user scrolls.
-     * This keeps the navigation readable over the hero background.
-     */
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  /**
-   * Smoothly scrolls to the given section id while accounting for the fixed header.
-   */
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      const headerHeight = 80; // Approximate header height
-      const elementPosition = element.offsetTop - headerHeight;
-      
-      window.scrollTo({
-        top: elementPosition,
-        behavior: 'smooth'
-      });
-    }
-    setIsMobileMenuOpen(false);
-  };
+/** Floating pill nav inspired by modern bento portfolio templates. */
+export function AppHeader({
+  currentLanguage,
+  onLanguageChange,
+  navigation,
+  cvLabels,
+}: AppHeaderProps) {
+  const [activeSection, setActiveSection] = useState<string>('hero');
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   const navItems = [
     { id: 'hero', label: navigation.home },
     { id: 'about', label: navigation.about },
     { id: 'experience', label: navigation.experience },
-    { id: 'education', label: navigation.education },
-    { id: 'skills', label: navigation.skills },
     { id: 'projects', label: navigation.projects },
     { id: 'contact', label: navigation.contact },
   ];
 
-  /**
-   * Public path for the CV PDF. `public/cv/cv.pdf` becomes `/cv/cv.pdf` at runtime.
-   */
-  const cvHref = '/cv/cv.pdf';
-  const cvDownloadName = 'Mohammed-Ammourie-CV.pdf';
+  useEffect(() => {
+    const observers: IntersectionObserver[] = [];
+
+    SECTION_IDS.forEach((id) => {
+      const el = document.getElementById(id);
+      if (!el) return;
+
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) setActiveSection(id);
+        },
+        { rootMargin: '-40% 0px -50% 0px', threshold: 0 }
+      );
+      observer.observe(el);
+      observers.push(observer);
+    });
+
+    return () => observers.forEach((o) => o.disconnect());
+  }, []);
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const y = element.getBoundingClientRect().top + window.scrollY - 88;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+    setMobileOpen(false);
+  };
 
   return (
-    <header
-      className={cn(
-        'fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out',
-        isScrolled
-          ? 'bg-background/95 backdrop-blur-md border-b border-border shadow-lg'
-          : 'bg-transparent'
-      )}
-    >
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo/Brand */}
-          <div className="flex items-center">
-            <h1 className="text-xl md:text-2xl font-bold text-primary">
-              Portfolio
-            </h1>
-          </div>
+    <>
+      <header className="fixed top-4 left-0 right-0 z-50 flex justify-center px-4 pointer-events-none">
+        <div
+          className={cn(
+            'pointer-events-auto flex w-full max-w-3xl items-center gap-1 rounded-full border border-white/[0.08]',
+            'bg-background/70 px-2 py-1.5 shadow-[0_8px_32px_rgba(0,0,0,0.45)] backdrop-blur-xl'
+          )}
+        >
+          <button
+            type="button"
+            onClick={() => scrollToSection('hero')}
+            className="hidden shrink-0 rounded-full px-3 py-1.5 text-sm font-bold font-headline text-foreground sm:block"
+          >
+            MA
+          </button>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-1">
+          <nav className="hidden flex-1 items-center justify-center gap-0.5 md:flex">
             {navItems.map((item) => (
-              <Button
+              <button
                 key={item.id}
-                variant="ghost"
-                size="sm"
+                type="button"
                 onClick={() => scrollToSection(item.id)}
-                className="px-3 py-2 text-sm font-medium text-foreground hover:text-primary hover:bg-primary/10 transition-all duration-200 rounded-lg"
+                className={cn(
+                  'rounded-full px-3 py-1.5 text-xs font-medium transition-surface',
+                  activeSection === item.id
+                    ? 'bg-primary text-primary-foreground'
+                    : 'text-muted-foreground hover:text-foreground hover:bg-white/[0.06]'
+                )}
               >
                 {item.label}
-              </Button>
+              </button>
             ))}
-
-            {/* CV Download */}
-            <Button
-              asChild
-              variant="secondary"
-              size="sm"
-              className="ml-2 px-3 py-2 text-sm font-semibold rounded-lg"
-            >
-              <a href={cvHref} download={cvDownloadName} aria-label={navigation.cv}>
-                <Download className="h-4 w-4" />
-                {navigation.cv}
-              </a>
-            </Button>
           </nav>
 
-          {/* Language Switcher */}
-          <div className="flex items-center space-x-2">
-            <LanguageSwitcher
-              currentLanguage={currentLanguage}
-              onLanguageChange={onLanguageChange}
-            />
-            
-            {/* Mobile Menu Button */}
+          <div className="ms-auto flex items-center gap-1">
+            <div className="hidden lg:block">
+              <CvDownloads labels={cvLabels} size="sm" className="gap-1" />
+            </div>
+            <LanguageSwitcher currentLanguage={currentLanguage} onLanguageChange={onLanguageChange} />
             <Button
               variant="ghost"
-              size="sm"
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden p-2"
+              size="icon"
+              className="h-9 w-9 rounded-full md:hidden"
+              onClick={() => setMobileOpen(!mobileOpen)}
+              aria-expanded={mobileOpen}
+              aria-label="Menu"
             >
-              {isMobileMenuOpen ? (
-                <X className="h-5 w-5" />
-              ) : (
-                <Menu className="h-5 w-5" />
-              )}
+              {mobileOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
             </Button>
           </div>
         </div>
+      </header>
 
-        {/* Mobile Navigation */}
-        {isMobileMenuOpen && (
-          <div className="md:hidden border-t border-border bg-background/95 backdrop-blur-md">
-            <nav className="flex flex-col space-y-1 py-4">
-              {navItems.map((item) => (
+      {mobileOpen && (
+        <div className="fixed inset-x-4 top-[4.5rem] z-50 rounded-2xl border border-white/[0.08] bg-background/95 p-4 shadow-material-lg backdrop-blur-xl md:hidden">
+          <nav className="flex flex-col gap-1">
+            {[...navItems, { id: 'skills', label: navigation.skills }, { id: 'education', label: navigation.education }].map(
+              (item) => (
                 <Button
                   key={item.id}
                   variant="ghost"
                   size="sm"
                   onClick={() => scrollToSection(item.id)}
-                  className="justify-start px-4 py-3 text-sm font-medium text-foreground hover:text-primary hover:bg-primary/10 transition-all duration-200"
+                  className="justify-start rounded-xl"
                 >
                   {item.label}
                 </Button>
-              ))}
-
-              {/* CV Download */}
-              <Button
-                asChild
-                variant="secondary"
-                size="sm"
-                className="justify-start mx-4 mt-2 px-4 py-3 text-sm font-semibold rounded-lg"
-              >
-                <a
-                  href={cvHref}
-                  download={cvDownloadName}
-                  aria-label={navigation.cv}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  <Download className="h-4 w-4" />
-                  {navigation.cv}
-                </a>
-              </Button>
-            </nav>
+              )
+            )}
+          </nav>
+          <div className="mt-3 border-t border-border/60 pt-3">
+            <CvDownloads labels={cvLabels} size="sm" onClick={() => setMobileOpen(false)} />
           </div>
-        )}
-      </div>
-    </header>
+        </div>
+      )}
+    </>
   );
-} 
+}

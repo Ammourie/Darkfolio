@@ -25,8 +25,8 @@ export function AnimatedSection({ children, className, delay = 0, ...props }: An
          * under the fixed header.
          */
         'scroll-mt-24 md:scroll-mt-28',
-        'transition-all duration-700 ease-out',
-        inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10',
+        'transition-all duration-500 ease-out',
+        inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6',
         className
       )}
       style={{ transitionDelay: `${delay}ms`, ...props.style }}

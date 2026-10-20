@@ -31,7 +31,7 @@ const TimelineItem = ({
     >
       <div
         className={cn(
-          'absolute left-0 top-1 flex h-12 w-12 items-center justify-center rounded-full bg-card/60 backdrop-blur-sm border border-border/70 shadow-material'
+          'absolute left-0 top-1 flex h-12 w-12 items-center justify-center rounded-full bg-card/80 border border-border/60 shadow-material'
         )}
       >
         {React.cloneElement(icon as React.ReactElement, {
@@ -47,7 +47,7 @@ const TimelineItem = ({
         <h3 className="text-xl font-bold font-headline tracking-tight text-foreground">{title}</h3>
         <p className="flex-shrink-0 text-sm font-medium text-muted-foreground">{period}</p>
       </div>
-      <p className="mt-1 text-lg font-semibold text-primary">{subtitle}</p>
+      <p className="mt-1 text-lg font-semibold text-foreground/90">{subtitle}</p>
       <p className="mt-2 leading-relaxed text-muted-foreground">{description}</p>
     </div>
   );
