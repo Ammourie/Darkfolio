@@ -1,8 +1,8 @@
 import type { ReactNode } from 'react';
 import Image from 'next/image';
-import { Briefcase, Download, GraduationCap, Mail, Phone, Sparkles } from 'lucide-react';
+import { Briefcase, ExternalLink, GraduationCap, Mail, Phone, Sparkles } from 'lucide-react';
 import { AnimatedSection } from '@/components/animated-section';
-import { CV_FILES, type CvDownloadLabels } from '@/components/cv-downloads';
+import { CV_FILES, CV_LINK_PROPS, type CvDownloadLabels } from '@/components/cv-downloads';
 import { ProjectCard } from '@/components/project-card';
 import { BentoCard } from '@/components/portfolio/bento-card';
 import { SectionLabel } from '@/components/portfolio/section-label';
@@ -26,11 +26,11 @@ type AboutActionTileProps = {
   label: string;
   sublabel?: string;
   icon: ReactNode;
-  download?: string;
+  openInNewTab?: boolean;
 };
 
 /** Quick-action tile for CV and contact links in About. */
-function AboutActionTile({ href, label, sublabel, icon, download }: AboutActionTileProps) {
+function AboutActionTile({ href, label, sublabel, icon, openInNewTab }: AboutActionTileProps) {
   const className = 'bento-tile group flex h-full min-h-[5.5rem] flex-col justify-between gap-3';
 
   const inner = (
@@ -48,7 +48,7 @@ function AboutActionTile({ href, label, sublabel, icon, download }: AboutActionT
   return (
     <a
       href={href}
-      {...(download ? { download } : {})}
+      {...(openInNewTab ? CV_LINK_PROPS : {})}
       aria-label={label}
       className={className}
     >
@@ -78,7 +78,7 @@ export function PortfolioBentoHome({
     >
       {/* About bento — portrait, bio, actions (page top) */}
       <AnimatedSection id="about" initialVisible className="scroll-mt-24 md:scroll-mt-28" delay={0}>
-        <SectionLabel title={data.about.title} subtitle={data.navigation.about} className="!mb-6 md:!mb-8" />
+        <SectionLabel title={data.about.title} className="!mb-6 md:!mb-8" />
         <div className="grid gap-4 lg:grid-cols-12 lg:items-stretch lg:gap-5">
           <BentoCard glow span="lg:col-span-4" className="flex h-full min-h-0 flex-col p-4 md:p-5">
             <div className="relative aspect-[4/5] w-full shrink-0 overflow-hidden rounded-2xl border border-white/[0.08] bg-background/40 lg:aspect-auto lg:min-h-[12rem] lg:flex-1">
@@ -113,17 +113,17 @@ export function PortfolioBentoHome({
             <div className="grid shrink-0 grid-cols-2 gap-3 sm:grid-cols-2 lg:grid-cols-4 lg:gap-4">
               <AboutActionTile
                 href={CV_FILES.english.href}
-                download={CV_FILES.english.download}
+                openInNewTab
                 label={cvLabels.english}
                 sublabel="PDF"
-                icon={<Download className="h-4 w-4" />}
+                icon={<ExternalLink className="h-4 w-4" />}
               />
               <AboutActionTile
                 href={CV_FILES.arabic.href}
-                download={CV_FILES.arabic.download}
+                openInNewTab
                 label={cvLabels.arabic}
                 sublabel="PDF"
-                icon={<Download className="h-4 w-4" />}
+                icon={<ExternalLink className="h-4 w-4" />}
               />
               <AboutActionTile
                 href={`mailto:${data.personal.email}`}
@@ -154,7 +154,7 @@ export function PortfolioBentoHome({
 
       {/* Experience */}
       <AnimatedSection id="experience" className="scroll-mt-28 mt-20 md:mt-28" delay={120}>
-        <SectionLabel title={data.sections.experience.title} subtitle={data.navigation.experience} />
+        <SectionLabel title={data.sections.experience.title} />
         <div className="grid gap-4 md:grid-cols-2">
           {(data.experience || []).map((item) => (
             <BentoCard
@@ -179,7 +179,7 @@ export function PortfolioBentoHome({
 
       {/* Education */}
       <AnimatedSection id="education" className="scroll-mt-28 mt-20 md:mt-28" delay={160}>
-        <SectionLabel title={data.sections.education.title} subtitle={data.navigation.education} />
+        <SectionLabel title={data.sections.education.title} />
         <div className="grid gap-4 md:grid-cols-2">
           {(data.education || []).map((item) => (
             <BentoCard key={`${item.institution}-${item.degree}`} className="p-6 md:p-7">
@@ -197,7 +197,7 @@ export function PortfolioBentoHome({
 
       {/* Skills */}
       <AnimatedSection id="skills" className="scroll-mt-28 mt-20 md:mt-28" delay={200}>
-        <SectionLabel title={data.sections.skills.title} subtitle={data.navigation.skills} />
+        <SectionLabel title={data.sections.skills.title} />
         <BentoCard glow className="p-6 md:p-8">
           <ul className="grid gap-3 sm:grid-cols-2">
             {skills.map((skill) => (
@@ -222,7 +222,7 @@ export function PortfolioBentoHome({
 
       {/* Projects */}
       <AnimatedSection id="projects" className="scroll-mt-28 mt-20 md:mt-28" delay={240}>
-        <SectionLabel title={data.sections.projects.title} subtitle={data.navigation.projects} />
+        <SectionLabel title={data.sections.projects.title} />
         {featuredProjects.length > 0 && (
           <div className="grid gap-4 md:grid-cols-2">
             {featuredProjects.map((project) => (
