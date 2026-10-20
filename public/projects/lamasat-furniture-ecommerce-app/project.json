@@ -4,7 +4,7 @@
   "company": "Osous Technology LLC",
   "google_play": "https://play.google.com/store/apps/details?id=com.osoustech.lamasat",
   "apple_store": "https://apps.apple.com/kg/app/lamasat-design/id6752251547",
-  "main_image": "/projects/lamasat-furniture-ecommerce-app/main.webp",
+  "main_image": "/projects/lamasat-furniture-ecommerce-app/main.png",
   "gallery_images": [
     "/projects/lamasat-furniture-ecommerce-app/gallery/01.webp",
     "/projects/lamasat-furniture-ecommerce-app/gallery/02.webp",
@@ -43,5 +43,6 @@
       ],
       "date": "20 يوليو 2025 - 3 أغسطس 2025"
     }
-  }
+  },
+  "cover_image": "/projects/lamasat-furniture-ecommerce-app/cover.webp"
 }

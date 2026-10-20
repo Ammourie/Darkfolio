@@ -99,6 +99,45 @@ body {
    * Subtle grid overlay used by the background decorations to create a modern
    * “tech” feel without distracting from the content.
    */
+  /** Slow drift for ambient code glyphs (background only) */
+  @keyframes code-glyph-drift {
+    0%,
+    100% {
+      transform: translate3d(0, 0, 0) rotate(var(--glyph-rotate, 0deg));
+    }
+    50% {
+      transform: translate3d(0, -10px, 0) rotate(calc(var(--glyph-rotate, 0deg) + 3deg));
+    }
+  }
+
+  .code-glyph {
+    --glyph-rotate: 0deg;
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    animation: code-glyph-drift 14s ease-in-out infinite;
+  }
+
+  /** Full-viewport grid of faint code tokens */
+  .code-symbol-field {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 0.5rem;
+    padding: 1.5rem;
+    opacity: 0.85;
+    mask-image: radial-gradient(ellipse 70% 65% at 50% 45%, transparent 8%, #000 55%);
+  }
+
+  .code-glyph-static {
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    user-select: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .code-glyph {
+      animation: none;
+    }
+  }
+
   .bg-grid-soft {
     background-image:
       linear-gradient(to right, hsl(var(--border) / 0.12) 1px, transparent 1px),

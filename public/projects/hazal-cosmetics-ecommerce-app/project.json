@@ -1,0 +1,47 @@
+{
+  "slug": "hazal-cosmetics-ecommerce-app",
+  "order": 10,
+  "company": "Osous Technology LLC",
+  "google_play": "https://play.google.com/store/apps/details?id=com.osoustech.hazalCosmetics",
+  "main_image": "/projects/hazal-cosmetics-ecommerce-app/main.png",
+  "gallery_images": [
+    "/projects/hazal-cosmetics-ecommerce-app/gallery/01.png",
+    "/projects/hazal-cosmetics-ecommerce-app/gallery/02.png",
+    "/projects/hazal-cosmetics-ecommerce-app/gallery/03.png",
+    "/projects/hazal-cosmetics-ecommerce-app/gallery/04.png",
+    "/projects/hazal-cosmetics-ecommerce-app/gallery/06.png"
+  ],
+  "locales": {
+    "en": {
+      "title": "Hazal Cosmetics – Beauty eCommerce App",
+      "description_short": "Flutter shopping app for authentic Korean and Asian skincare, haircare, and makeup with cart, checkout, addresses, and order tracking.",
+      "description_long": "Hazal Cosmetics is a consumer eCommerce mobile application built with Flutter for Osous Technology. The app specializes in authentic Korean and Asian beauty products—skincare, haircare, body care, and makeup—offering a streamlined mobile shopping experience similar to other modular Osous storefronts. Users browse curated catalogs and product detail pages, manage a shopping cart, save delivery addresses, complete checkout flows, and follow order status through fulfillment. The project reuses proven eCommerce patterns from Osous modular platforms (catalog navigation, cart persistence, account and address management, and order history) while tailoring content and branding for the cosmetics retail domain.",
+      "tags": [
+        "Flutter",
+        "eCommerce",
+        "Cosmetics",
+        "Beauty",
+        "Shopping Cart",
+        "Order Tracking",
+        "B2C"
+      ],
+      "date": "September 2026"
+    },
+    "ar": {
+      "title": "هازال كوزمتكس – تطبيق تجارة إلكترونية للتجميل",
+      "description_short": "تطبيق تسوق Flutter لمنتجات العناية والتجميل الكورية والآسيوية الأصلية مع سلة، دفع، عناوين، وتتبع الطلبات.",
+      "description_long": "هازال كوزمتكس تطبيق تجارة إلكترونية للمستهلك مطوّر بـ Flutter لصالح Osous Technology. يركّز على منتجات الجمال الكورية والآسيوية الأصلية—العناية بالبشرة والشعر والجسم والمكياج—مع تجربة شراء سلسة على الهاتف، مستفيداً من أنماط التجارة الإلكترونية المعيارية المستخدمة في مشاريع Osous الأخرى. يمكن للمستخدمين تصفح المنتجات وصفحات التفاصيل، إدارة سلة المشتريات، حفظ عناوين التوصيل، إتمام الطلب، ومتابعة حالة الشحن حتى الاستلام.",
+      "tags": [
+        "Flutter",
+        "تجارة إلكترونية",
+        "مستحضرات تجميل",
+        "جمال",
+        "سلة مشتريات",
+        "تتبع الطلبات",
+        "B2C"
+      ],
+      "date": "سبتمبر 2026"
+    }
+  },
+  "cover_image": "/projects/hazal-cosmetics-ecommerce-app/cover.webp"
+}

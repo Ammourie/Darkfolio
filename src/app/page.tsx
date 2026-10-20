@@ -39,7 +39,7 @@ export default async function Home({ searchParams }: PageProps) {
         close: data.static_strings['close_menu'],
       }}
     >
-      <div className="relative min-h-screen overflow-x-hidden bg-background">
+      <div className="relative isolate min-h-screen overflow-x-hidden">
         <BackgroundDecorations />
         <PortfolioBentoHome
           data={data}

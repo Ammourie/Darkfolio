@@ -27,6 +27,8 @@ export interface Project {
   description_long: string;
   tags: string[];
   main_image: string;
+  /** Wide hero / card banner; empty → UI uses cover placeholder. */
+  cover_image?: string;
   gallery_images: string[];
   source_code_url?: string;
   google_play?: string;

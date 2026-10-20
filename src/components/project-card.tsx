@@ -8,13 +8,11 @@ import { Language } from '@/types/portfolio';
 import { ResponsiveImage } from './responsive-image';
 import { BentoCard } from '@/components/portfolio/bento-card';
 import { cn } from '@/lib/utils';
-
-const PLACEHOLDER_SVG =
-  'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjNmNGY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzljYTNhNiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlIG5vdCBhdmFpbGFibGU8L3RleHQ+PC9zdmc+';
-
-function hasProjectImage(src: string | undefined) {
-  return Boolean(src && src.trim() && !src.startsWith('data:'));
-}
+import {
+  getProjectCoverSrc,
+  hasProjectAsset,
+  isProjectCoverPlaceholder,
+} from '@/lib/project-images';
 
 export async function ProjectCard({
   project,
@@ -27,8 +25,10 @@ export async function ProjectCard({
 }) {
   const currentLanguage: Language = isLanguage(lang) ? lang : 'en';
   const data = await getPortfolioData(currentLanguage);
-  const showImage = hasProjectImage(project.main_image);
-  const imageSrc = showImage ? project.main_image : PLACEHOLDER_SVG;
+  const coverSrc = getProjectCoverSrc(project.cover_image);
+  const iconSrc = project.main_image;
+  const showIcon = hasProjectAsset(iconSrc);
+  const coverIsPlaceholder = isProjectCoverPlaceholder(coverSrc);
 
   return (
     <Link
@@ -47,18 +47,21 @@ export async function ProjectCard({
             featured ? 'h-52 md:h-64' : 'h-44'
           )}
         >
-          {showImage ? (
-            <>
-              <Image src={imageSrc} alt="" fill className="object-cover blur-2xl scale-110 opacity-40" aria-hidden />
-              <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent" />
-              <ResponsiveImage src={imageSrc} alt={project.title} />
-            </>
-          ) : (
-            <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 bg-gradient-to-br from-primary/10 via-card to-background text-muted-foreground">
-              <Layers className="h-10 w-10 text-primary/50" />
-              <span className="px-4 text-center text-xs font-medium uppercase tracking-wider">Preview coming soon</span>
+          {!coverIsPlaceholder ? (
+            <Image src={coverSrc} alt="" fill className="object-cover blur-2xl scale-110 opacity-40" aria-hidden />
+          ) : null}
+          <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent" />
+          <ResponsiveImage src={coverSrc} alt={project.title} />
+          {coverIsPlaceholder ? (
+            <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
+              <Layers className="h-8 w-8 text-primary/40" aria-hidden />
             </div>
-          )}
+          ) : null}
+          {showIcon && iconSrc !== coverSrc ? (
+            <div className="absolute bottom-3 start-3 z-10 h-14 w-14 overflow-hidden rounded-xl border border-white/20 bg-background/80 shadow-lg md:h-16 md:w-16">
+              <Image src={iconSrc} alt="" fill className="object-cover" sizes="64px" />
+            </div>
+          ) : null}
         </div>
         <div className="flex flex-1 flex-col p-5 md:p-6">
           <div className="flex items-start justify-between gap-3">

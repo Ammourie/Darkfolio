@@ -19,6 +19,7 @@ export type ProjectFile = {
   order?: number;
   company?: string;
   main_image?: string;
+  cover_image?: string;
   gallery_images?: string[];
   google_play?: string;
   apple_store?: string;
@@ -79,19 +80,29 @@ async function readProjectFile(slug: string): Promise<ProjectFile> {
 }
 
 /** Fills missing image paths from files in the project folder. */
-async function resolveAssets(slug: string, file: ProjectFile): Promise<Pick<Project, 'main_image' | 'gallery_images'>> {
+async function resolveAssets(
+  slug: string,
+  file: ProjectFile
+): Promise<Pick<Project, 'main_image' | 'cover_image' | 'gallery_images'>> {
   const base = `/projects/${slug}`;
   let main_image = file.main_image ?? '';
+  let cover_image = file.cover_image ?? '';
   let gallery_images = file.gallery_images ?? [];
 
   const projectDir = path.join(PROJECTS_DIR, slug);
   const galleryDir = path.join(projectDir, 'gallery');
 
-  if (!main_image) {
+  if (!main_image || !cover_image) {
     try {
       const files = await fs.readdir(projectDir);
-      const mainFile = files.find((f) => /^main\./i.test(f) && IMAGE_EXT.test(f));
-      if (mainFile) main_image = `${base}/${mainFile}`;
+      if (!main_image) {
+        const mainFile = files.find((f) => /^main\./i.test(f) && IMAGE_EXT.test(f));
+        if (mainFile) main_image = `${base}/${mainFile}`;
+      }
+      if (!cover_image) {
+        const coverFile = files.find((f) => /^cover\./i.test(f) && IMAGE_EXT.test(f));
+        if (coverFile) cover_image = `${base}/${coverFile}`;
+      }
     } catch {
       /* ignore */
     }
@@ -107,7 +118,7 @@ async function resolveAssets(slug: string, file: ProjectFile): Promise<Pick<Proj
     }
   }
 
-  return { main_image, gallery_images };
+  return { main_image, cover_image, gallery_images };
 }
 
 /** Builds a localized Project from public/projects/{slug}/project.json. */
@@ -129,6 +140,7 @@ export async function getProjectBySlugFromDisk(
       description_long: locale.description_long,
       tags: locale.tags ?? [],
       main_image: assets.main_image,
+      cover_image: assets.cover_image,
       gallery_images: assets.gallery_images,
       company: file.company,
       date: locale.date,

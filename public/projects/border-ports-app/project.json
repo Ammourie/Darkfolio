@@ -3,7 +3,7 @@
   "order": 0,
   "company": "Osous Technology LLC",
   "google_play": "https://play.google.com/store/apps/details?id=com.osousTech.borderPorts",
-  "main_image": "/projects/border-ports-app/main.jpg",
+  "main_image": "/projects/border-ports-app/main.png",
   "gallery_images": [
     "/projects/border-ports-app/gallery/01.jpg",
     "/projects/border-ports-app/gallery/02.jpg",
@@ -41,5 +41,6 @@
       ],
       "date": "15 مايو 2025 - 15 يونيو 2025"
     }
-  }
+  },
+  "cover_image": "/projects/border-ports-app/cover.webp"
 }

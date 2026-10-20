@@ -4,7 +4,7 @@
   "company": "Osous Technology LLC",
   "google_play": "https://play.google.com/store/apps/details?id=com.osoustech.maria",
   "apple_store": "https://apps.apple.com/kg/app/darbak/id6752897584",
-  "main_image": "/projects/darbak-customer-app/main.webp",
+  "main_image": "/projects/darbak-customer-app/main.png",
   "gallery_images": [
     "/projects/darbak-customer-app/gallery/01.webp",
     "/projects/darbak-customer-app/gallery/02.webp",
@@ -46,5 +46,6 @@
       ],
       "date": "2025"
     }
-  }
+  },
+  "cover_image": "/projects/darbak-customer-app/cover.webp"
 }

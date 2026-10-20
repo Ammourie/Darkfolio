@@ -48,6 +48,16 @@ async function localizeProjectManifest(slug, project) {
   const galleryDir = path.join(projectDir, 'gallery');
 
   let main_image = project.main_image;
+  let cover_image = project.cover_image;
+  if (cover_image && REMOTE.test(cover_image)) {
+    await ensureDir(projectDir);
+    const { buffer, ext } = await downloadImage(cover_image);
+    const fileName = `cover.${ext}`;
+    await fs.writeFile(path.join(projectDir, fileName), buffer);
+    cover_image = `/projects/${slug}/${fileName}`;
+    console.log(`  cover -> ${cover_image}`);
+  }
+
   if (main_image && REMOTE.test(main_image)) {
     await ensureDir(projectDir);
     const { buffer, ext } = await downloadImage(main_image);
@@ -75,7 +85,7 @@ async function localizeProjectManifest(slug, project) {
     }
   }
 
-  return { ...project, main_image, gallery_images };
+  return { ...project, main_image, cover_image, gallery_images };
 }
 
 async function main() {
@@ -93,6 +103,7 @@ async function main() {
     const project = JSON.parse(await fs.readFile(manifestPath, 'utf8'));
     const hasRemote =
       (project.main_image && REMOTE.test(project.main_image)) ||
+      (project.cover_image && REMOTE.test(project.cover_image)) ||
       (project.gallery_images || []).some((u) => u && REMOTE.test(u));
 
     console.log(`\n${slug}`);

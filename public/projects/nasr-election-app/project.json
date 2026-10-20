@@ -3,7 +3,7 @@
   "order": 2,
   "company": "Osous Technology LLC",
   "google_play": "https://play.google.com/store/apps/details?id=com.osoustech.electionApp",
-  "main_image": "/projects/nasr-election-app/main.jpg",
+  "main_image": "/projects/nasr-election-app/main.png",
   "gallery_images": [
     "/projects/nasr-election-app/gallery/01.jpg",
     "/projects/nasr-election-app/gallery/02.jpg",
@@ -40,5 +40,6 @@
       ],
       "date": "15 مايو 2025 - 31 يوليو 2025"
     }
-  }
+  },
+  "cover_image": "/projects/nasr-election-app/cover.webp"
 }

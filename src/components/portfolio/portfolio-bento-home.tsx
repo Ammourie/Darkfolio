@@ -74,14 +74,14 @@ export function PortfolioBentoHome({
     <main
       id="main-content"
       tabIndex={-1}
-      className="relative z-0 mx-auto w-full max-w-6xl px-4 pb-24 pt-24 outline-none md:px-6 md:pt-28"
+      className="relative z-10 mx-auto w-full max-w-6xl px-4 pb-24 pt-24 outline-none md:px-6 md:pt-28"
     >
       {/* About bento — portrait, bio, actions (page top) */}
       <AnimatedSection id="about" initialVisible className="scroll-mt-24 md:scroll-mt-28" delay={0}>
         <SectionLabel title={data.about.title} subtitle={data.navigation.about} className="!mb-6 md:!mb-8" />
-        <div className="grid gap-4 lg:grid-cols-12 lg:gap-5">
-          <BentoCard glow span="lg:col-span-4" className="flex flex-col p-4 md:p-5">
-            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl border border-white/[0.08] bg-background/40">
+        <div className="grid gap-4 lg:grid-cols-12 lg:items-stretch lg:gap-5">
+          <BentoCard glow span="lg:col-span-4" className="flex h-full min-h-0 flex-col p-4 md:p-5">
+            <div className="relative aspect-[4/5] w-full shrink-0 overflow-hidden rounded-2xl border border-white/[0.08] bg-background/40 lg:aspect-auto lg:min-h-[12rem] lg:flex-1">
               <Image
                 src={avatarSrc}
                 alt={data.personal.name}
@@ -96,21 +96,21 @@ export function PortfolioBentoHome({
               <h1 className="text-lg font-bold font-headline tracking-tight">{data.personal.name}</h1>
               <p className="mt-1 text-sm text-muted-foreground">{data.personal.title}</p>
             </div>
-            <SocialLinks social={data.personal.social} className="mt-5 px-0.5" size="lg" />
+            <SocialLinks social={data.personal.social} className="mt-auto px-0.5 pt-5" size="lg" />
           </BentoCard>
 
-          <div className="flex flex-col gap-4 lg:col-span-8">
-            <BentoCard className="relative p-6 md:p-8 lg:p-9">
+          <div className="flex h-full min-h-0 flex-col gap-4 lg:col-span-8">
+            <BentoCard className="relative flex min-h-0 flex-1 flex-col p-6 md:p-8 lg:p-9">
               <div
                 aria-hidden
                 className="pointer-events-none absolute -top-16 end-0 h-40 w-40 rounded-full bg-primary/10 blur-3xl"
               />
-              <p className="relative text-base leading-[1.75] text-muted-foreground md:text-lg md:leading-[1.8]">
+              <p className="relative flex-1 text-base leading-[1.75] text-muted-foreground md:text-lg md:leading-[1.8]">
                 {data.about.description}
               </p>
             </BentoCard>
 
-            <div className="grid grid-cols-2 gap-3 sm:grid-cols-2 lg:grid-cols-4 lg:gap-4">
+            <div className="grid shrink-0 grid-cols-2 gap-3 sm:grid-cols-2 lg:grid-cols-4 lg:gap-4">
               <AboutActionTile
                 href={CV_FILES.english.href}
                 download={CV_FILES.english.download}

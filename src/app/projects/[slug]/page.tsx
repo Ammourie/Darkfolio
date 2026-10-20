@@ -15,6 +15,7 @@ import { Language } from '@/types/portfolio';
 import { ResponsiveImage } from '@/components/responsive-image';
 import { BackgroundDecorations } from '@/components/background-decorations';
 import { BentoCard } from '@/components/portfolio/bento-card';
+import { getProjectCoverSrc, hasProjectAsset, PROJECT_COVER_PLACEHOLDER } from '@/lib/project-images';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -64,12 +65,11 @@ export default async function ProjectPage({ params, searchParams }: Props) {
     notFound();
   }
 
-  const imageSrc =
-    project.main_image ||
-    'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjNmNGY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzljYTNhNiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlIG5vdCBhdmFpbGFibGU8L3RleHQ+PC9zdmc+';
+  const coverSrc = getProjectCoverSrc(project.cover_image);
+  const iconSrc = hasProjectAsset(project.main_image) ? project.main_image : PROJECT_COVER_PLACEHOLDER;
 
   return (
-    <div className="relative min-h-screen bg-background text-foreground">
+    <div className="relative isolate min-h-screen text-foreground">
       <BackgroundDecorations />
       <div className="fixed top-6 left-6 z-30 rtl:left-auto rtl:right-6">
         <Button
@@ -84,16 +84,16 @@ export default async function ProjectPage({ params, searchParams }: Props) {
         </Button>
       </div>
 
-      <main className="mx-auto max-w-4xl px-4 pb-20 pt-24 md:px-6">
+      <main className="relative z-10 mx-auto max-w-4xl px-4 pb-20 pt-24 md:px-6">
         <BentoCard glow className="overflow-hidden">
           <div className="relative min-h-[280px]">
-            <ResponsiveImage src={imageSrc} alt="" />
+            <ResponsiveImage src={coverSrc} alt="" />
             <div className="absolute inset-0 bg-gradient-to-t from-card via-card/60 to-transparent" />
             <div className="relative z-10 flex flex-col items-center gap-5 p-8 md:p-12 pt-32">
-              <div className="relative h-48 w-full max-w-sm overflow-hidden rounded-2xl border border-white/[0.08] shadow-material md:h-56">
+              <div className="relative h-28 w-28 overflow-hidden rounded-2xl border border-white/[0.12] bg-background/80 shadow-material md:h-32 md:w-32">
                 <Image
-                  src={imageSrc}
-                  alt={`Main image for ${project.title}`}
+                  src={iconSrc}
+                  alt={`App icon for ${project.title}`}
                   fill
                   className="object-cover"
                   priority
