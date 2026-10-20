@@ -33,7 +33,11 @@ export default async function Home({ searchParams }: PageProps) {
     <ClientPageWrapper
       initialLanguage={currentLanguage}
       navigation={data.navigation}
-      cvLabels={cvLabels}
+      skipToContentLabel={data.static_strings['skip_to_content']}
+      menuLabels={{
+        open: data.static_strings['open_menu'],
+        close: data.static_strings['close_menu'],
+      }}
     >
       <div className="relative min-h-screen overflow-x-hidden bg-background">
         <BackgroundDecorations />

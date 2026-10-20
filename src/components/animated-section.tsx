@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { cn } from '@/lib/utils';
 import React from 'react';
@@ -7,29 +8,42 @@ import React from 'react';
 type AnimatedSectionProps = React.HTMLAttributes<HTMLElement> & {
   children: React.ReactNode;
   delay?: number;
+  /** First paint visible; avoids blank page before intersection observer runs */
+  initialVisible?: boolean;
 };
 
-export function AnimatedSection({ children, className, delay = 0, ...props }: AnimatedSectionProps) {
+export function AnimatedSection({
+  children,
+  className,
+  delay = 0,
+  initialVisible = false,
+  ...props
+}: AnimatedSectionProps) {
+  const [reduceMotion, setReduceMotion] = useState(initialVisible);
+
+  useEffect(() => {
+    setReduceMotion(window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  }, []);
+
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.1,
+    threshold: 0.08,
+    initialInView: initialVisible,
   });
+
+  const visible = reduceMotion || inView;
 
   return (
     <section
       {...props}
       ref={ref}
       className={cn(
-        /**
-         * `scroll-mt-*` ensures hash navigation (e.g. `#projects`) doesn't hide content
-         * under the fixed header.
-         */
-        'scroll-mt-24 md:scroll-mt-28',
-        'transition-all duration-500 ease-out',
-        inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6',
+        'scroll-mt-24 md:scroll-mt-32',
+        'motion-safe:transition-all motion-safe:duration-500 motion-safe:ease-out',
+        visible ? 'opacity-100 translate-y-0' : 'motion-safe:translate-y-6 opacity-0',
         className
       )}
-      style={{ transitionDelay: `${delay}ms`, ...props.style }}
+      style={{ transitionDelay: reduceMotion ? '0ms' : `${delay}ms`, ...props.style }}
     >
       {children}
     </section>

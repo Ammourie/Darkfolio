@@ -36,7 +36,7 @@ export default async function RootLayout({
   return (
     <html lang={lang} dir={dir} className={`${inter.variable} dark`}>
       <body
-        className={`font-body antialiased ${dir === 'rtl' ? 'rtl' : 'ltr'}`}
+        className={`font-sans antialiased ${dir === 'rtl' ? 'rtl' : 'ltr'}`}
         suppressHydrationWarning={true}
       >
         {children}

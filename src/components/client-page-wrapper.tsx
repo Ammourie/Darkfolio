@@ -1,26 +1,26 @@
 'use client';
 
-import { useState, useEffect } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { AppHeader } from '@/components/app-header';
 import { LanguageProvider, useLanguage } from '@/components/language-provider';
-import type { CvDownloadLabels } from '@/components/cv-downloads';
-
 interface ClientPageWrapperProps {
   children: React.ReactNode;
   initialLanguage: string;
   navigation: any;
-  cvLabels: CvDownloadLabels;
+  skipToContentLabel: string;
+  menuLabels: { open: string; close: string };
 }
 
 function PageContent({
   children,
   navigation,
-  cvLabels,
+  skipToContentLabel,
+  menuLabels,
 }: {
   children: React.ReactNode;
   navigation: any;
-  cvLabels: CvDownloadLabels;
+  skipToContentLabel: string;
+  menuLabels: { open: string; close: string };
 }) {
   const { currentLanguage, setLanguage } = useLanguage();
   const router = useRouter();
@@ -38,11 +38,14 @@ function PageContent({
 
   return (
     <>
+      <a href="#main-content" className="skip-link">
+        {skipToContentLabel}
+      </a>
       <AppHeader
         currentLanguage={currentLanguage}
         onLanguageChange={handleLanguageChange}
         navigation={navigation}
-        cvLabels={cvLabels}
+        menuLabels={menuLabels}
       />
       {children}
     </>
@@ -53,11 +56,16 @@ export function ClientPageWrapper({
   children,
   initialLanguage,
   navigation,
-  cvLabels,
+  skipToContentLabel,
+  menuLabels,
 }: ClientPageWrapperProps) {
   return (
     <LanguageProvider initialLanguage={initialLanguage}>
-      <PageContent navigation={navigation} cvLabels={cvLabels}>
+      <PageContent
+        navigation={navigation}
+        skipToContentLabel={skipToContentLabel}
+        menuLabels={menuLabels}
+      >
         {children}
       </PageContent>
     </LanguageProvider>

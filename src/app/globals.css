@@ -158,6 +158,33 @@ body {
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   }
 
+  /** Hero name accent */
+  .text-gradient-hero {
+    @apply bg-gradient-to-br from-foreground via-foreground to-primary/70 bg-clip-text text-transparent;
+  }
+
+  /** Interactive bento tile hover */
+  .bento-tile {
+    @apply relative overflow-hidden rounded-2xl border border-white/[0.07] bg-white/[0.03] p-4 transition-surface;
+  }
+
+  .bento-tile:hover {
+    @apply border-primary/35 bg-white/[0.05] shadow-[0_0_0_1px_hsl(var(--primary)/0.15)];
+  }
+
+  .bento-tile:focus-visible {
+    @apply outline-none ring-2 ring-primary/50 ring-offset-2 ring-offset-background;
+  }
+
+  /** Keyboard skip link — visible on focus only */
+  .skip-link {
+    @apply pointer-events-none fixed start-4 top-4 z-[200] -translate-y-16 rounded-full border border-white/10 bg-background px-4 py-2 text-sm font-medium text-foreground opacity-0 shadow-lg transition-all duration-200;
+  }
+
+  .skip-link:focus {
+    @apply pointer-events-auto translate-y-0 opacity-100 outline-none ring-2 ring-primary;
+  }
+
   /** Opt-in smooth hover for interactive surfaces */
   .transition-surface {
     transition-property: color, background-color, border-color, box-shadow, transform, opacity;

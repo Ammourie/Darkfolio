@@ -10,6 +10,7 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { Globe, ChevronDown } from 'lucide-react';
 import { useRouter, usePathname } from 'next/navigation';
+import { cn } from '@/lib/utils';
 
 interface Language {
   code: string;
@@ -25,9 +26,15 @@ const languages: Language[] = [
 interface LanguageSwitcherProps {
   currentLanguage: string;
   onLanguageChange: (language: string) => void;
+  /** Icon-only trigger for compact header layouts */
+  compact?: boolean;
 }
 
-export function LanguageSwitcher({ currentLanguage, onLanguageChange }: LanguageSwitcherProps) {
+export function LanguageSwitcher({
+  currentLanguage,
+  onLanguageChange,
+  compact = false,
+}: LanguageSwitcherProps) {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
@@ -50,13 +57,23 @@ export function LanguageSwitcher({ currentLanguage, onLanguageChange }: Language
       <DropdownMenuTrigger asChild>
         <Button
           variant="ghost"
-          size="sm"
-          className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground transition-colors duration-200"
+          size={compact ? 'icon' : 'sm'}
+          className={cn(
+            'text-foreground hover:bg-white/[0.06] transition-surface',
+            compact
+              ? 'h-9 w-9 rounded-full'
+              : 'flex items-center gap-2 px-3 py-2 text-sm font-medium'
+          )}
+          aria-label={currentLang.displayName}
         >
           <Globe className="h-4 w-4" />
-          <span className="text-lg">{currentLang.flag}</span>
-          <span className="hidden sm:inline">{currentLang.displayName}</span>
-          <ChevronDown className="h-3 w-3 transition-transform duration-200" />
+          {!compact && (
+            <>
+              <span className="text-lg">{currentLang.flag}</span>
+              <span className="hidden sm:inline">{currentLang.displayName}</span>
+            </>
+          )}
+          {!compact && <ChevronDown className="h-3 w-3" />}
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-48">

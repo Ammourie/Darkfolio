@@ -2,7 +2,8 @@ import { Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
-const CV_FILES = {
+/** Public CV paths for reuse in about tiles. */
+export const CV_FILES = {
   english: {
     href: '/cv/cv_english.pdf',
     download: 'Mohammed-Ammourie-CV-EN.pdf',

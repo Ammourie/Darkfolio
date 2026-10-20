@@ -11,8 +11,8 @@
     "contact": "Contact"
   },
   "personal": {
-    "name": "Mohammed Ammourie",
-    "title": "Software Developer & Flutter Specialist",
+    "name": "Mohammed Al-Ammourie",
+    "title": "Software Developer · Flutter Specialist",
     "email": "mohammed.ammourie@gmail.com",
     "phone": "+963933564291",
     "social": {
@@ -25,7 +25,7 @@
   },
   "about": {
     "title": "About Me",
-    "description": "A passionate software developer with a strong focus on delivering high-quality applications. Experienced in building innovative solutions that enhance user experience and business efficiency. Adept at working in dynamic environments, collaborating with teams, and continuously learning to improve and adapt to new challenges. Specialized in Flutter development and eCommerce applications with expertise in mobile and web platforms."
+    "description": "With 3+ years of experience building cross-platform mobile applications and supporting web/admin platforms across eCommerce, transportation, logistics, healthcare, payments, identity verification, and other business domains. Skilled in translating business requirements into mobile interfaces, integrating REST APIs and third-party services, and building admin dashboards with full CRUD functionality. Primary stack is Flutter/Dart, complemented by Next.js/JavaScript, Firebase, Google Maps, and payment/identity-verification integrations. Uses AI-assisted development tools and workflows (Claude, Cursor, custom rules and agents) to accelerate delivery while maintaining strong engineering judgment."
   },
   "sections": {
     "experience": {
@@ -48,69 +48,49 @@
     "downloadJson": "Download JSON"
   },
   "skills": [
-    {
-      "name": "Flutter",
-      "level": 95
-    },
-    {
-      "name": "Firebase",
-      "level": 90
-    },
-    {
-      "name": "Next.js",
-      "level": 85
-    },
-    {
-      "name": "RESTful APIs",
-      "level": 90
-    },
-    {
-      "name": "Google Maps Integration",
-      "level": 85
-    },
-    {
-      "name": "Payment Integration",
-      "level": 80
-    },
-    {
-      "name": "Live Tracking",
-      "level": 85
-    },
-    {
-      "name": "Git",
-      "level": 90
-    },
-    {
-      "name": "Linux",
-      "level": 75
-    }
+    { "name": "Flutter", "level": 95 },
+    { "name": "Dart", "level": 95 },
+    { "name": "Firebase", "level": 90 },
+    { "name": "REST APIs", "level": 90 },
+    { "name": "Bloc/Cubit", "level": 88 },
+    { "name": "Google Maps Platform", "level": 88 },
+    { "name": "Git", "level": 90 },
+    { "name": "Next.js", "level": 85 },
+    { "name": "JavaScript", "level": 85 },
+    { "name": "Payment Integration", "level": 82 },
+    { "name": "KYC / Identity Verification", "level": 80 },
+    { "name": "NestJS", "level": 78 },
+    { "name": "PostgreSQL", "level": 75 },
+    { "name": "Docker", "level": 72 },
+    { "name": "Linux", "level": 75 },
+    { "name": "AI-Assisted Development", "level": 85 }
   ],
   "experience": [
     {
       "title": "Software Developer",
+      "company": "General Authority for Radio and Television",
+      "period": "Oct 2026 - Present",
+      "description": "Software developer at the General Authority for Radio and Television in Damascus, contributing to application development and digital systems for the authority."
+    },
+    {
+      "title": "Software Developer",
       "company": "Osous Technology LLC",
-      "period": "Feb 2024 - Present",
-      "description": "Specialized in eCommerce applications, building scalable solutions for online businesses. Developed and maintained applications for both mobile and web platforms. Built and contributed to several admin dashboards, implementing CRUD operations. Integrated Google Maps and tracking functionalities for real-time location services. Worked on delivery and logistics solutions, enhancing route optimization and live tracking. Integrated payment methods such as Zain Cash and other online payment gateways for seamless transactions."
+      "period": "Feb 2024 - Oct 2026",
+      "description": "Developed and maintained production Flutter applications for Android and iOS across eCommerce, delivery/logistics, and multi-vendor platforms, serving customer, vendor, driver, and service-provider roles. Built core eCommerce flows—catalog, cart, checkout, coupons, orders, and ratings—and contributed to admin dashboards with full CRUD functionality. Integrated Google Maps and live location tracking for transportation and delivery workflows, including driver location updates and route visualization. Integrated payment gateways including Zain Cash, handling checkout, payment status, and order-workflow synchronization. Implemented authentication, role-based access, and Firebase-backed infrastructure (auth, push notifications, app configuration). Collaborated with backend and frontend developers using Git workflows across debugging, testing, and release preparation."
     },
     {
       "title": "Flutter Developer",
       "company": "DropIdea Team",
       "period": "Oct 2022 - Nov 2023",
-      "description": "Designed, developed, and deployed Mobile apps using Flutter. Created Invoice Management App & Admin Panel system for managing invoices, billing, and payments. Developed Home-Working App & Admin Panel platform for connecting freelancers with job opportunities. Ensured cross-platform compatibility and seamless performance across devices. Implemented authentication, data management, and backend integrations. Collaborated with teams to align business logic with front-end development."
+      "description": "Built and shipped an Invoice Management application and admin panel covering invoice creation, billing workflows, and payment-related data. Developed a Home-Working platform connecting freelancers and service providers with job opportunities, including role-based access and service workflows. Implemented authentication, state/data management, and REST API integration across both mobile applications. Delivered cross-platform Flutter UI with consistent performance across Android and iOS, collaborating closely with backend teams on business logic."
     }
   ],
   "education": [
     {
-      "degree": "Master of Web Science",
-      "institution": "Syrian Virtual University",
-      "period": "In Progress",
-      "description": "Advanced studies in web technologies, software engineering principles, and modern development practices. Focus on web science methodologies and cutting-edge technologies in software development."
-    },
-    {
       "degree": "Bachelor in Networks Engineering",
       "institution": "Homs University",
       "period": "Completed",
-      "description": "Comprehensive study of network engineering principles, computer systems, and software development fundamentals. Strong foundation in computer networks, system administration, and software engineering practices."
+      "description": "GPA: 80.999. Comprehensive study of network engineering principles, computer systems, and software development fundamentals."
     }
   ],
   "static_strings": {
@@ -120,7 +100,12 @@
     "download_cv_english": "CV (English)",
     "download_cv_arabic": "CV (Arabic)",
     "view_projects": "View Projects",
+    "skip_to_content": "Skip to content",
+    "open_menu": "Open menu",
+    "close_menu": "Close menu",
+    "projects_empty": "Projects will appear here soon.",
     "contact_description": "Have a project in mind? Let’s talk.",
+    "contact_details_in_about": "View email, phone & CV",
     "personal_info": "Personal info",
     "quick_stats": "Quick stats",
     "email": "Email",
