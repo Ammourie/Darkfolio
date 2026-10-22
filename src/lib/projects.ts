@@ -23,6 +23,8 @@ export type ProjectFile = {
   gallery_images?: string[];
   /** When true, gallery was fetched via download_play_screenshots.py; sync-all skips re-download. */
   google_play_gallery_synced?: boolean;
+  /** When true, gallery was converted to JPEG via convert-play-galleries-to-jpeg.mjs. */
+  google_play_gallery_jpeg?: boolean;
   google_play?: string;
   apple_store?: string;
   source_code_url?: string;

@@ -45,6 +45,7 @@ for (const slug of fs.readdirSync(projectsDir)) {
   const files = fs.readdirSync(galleryDir).sort();
   project.gallery_images = files.map((f) => `/projects/${slug}/gallery/${f}`);
   project.google_play_gallery_synced = true;
+  delete project.google_play_gallery_jpeg;
   fs.writeFileSync(manifestPath, `${JSON.stringify(project, null, 2)}\n`, 'utf8');
   console.log(`  gallery_images: ${files.length} file(s), google_play_gallery_synced: true`);
 }

@@ -6,14 +6,14 @@
   "apple_store": "https://apps.apple.com/kg/app/%D8%A8%D9%86%D8%B2-%D8%A7%D9%84%D9%81%D9%86%D9%8A/id6742101831",
   "main_image": "/projects/benz-technical-app/main.png",
   "gallery_images": [
-    "/projects/benz-technical-app/gallery/01.png",
-    "/projects/benz-technical-app/gallery/02.png",
-    "/projects/benz-technical-app/gallery/03.png",
-    "/projects/benz-technical-app/gallery/04.png",
-    "/projects/benz-technical-app/gallery/05.png",
-    "/projects/benz-technical-app/gallery/06.png",
-    "/projects/benz-technical-app/gallery/07.png",
-    "/projects/benz-technical-app/gallery/08.png"
+    "/projects/benz-technical-app/gallery/01.jpg",
+    "/projects/benz-technical-app/gallery/02.jpg",
+    "/projects/benz-technical-app/gallery/03.jpg",
+    "/projects/benz-technical-app/gallery/04.jpg",
+    "/projects/benz-technical-app/gallery/05.jpg",
+    "/projects/benz-technical-app/gallery/06.jpg",
+    "/projects/benz-technical-app/gallery/07.jpg",
+    "/projects/benz-technical-app/gallery/08.jpg"
   ],
   "locales": {
     "en": {
@@ -54,5 +54,6 @@
     }
   },
   "cover_image": "/projects/benz-technical-app/cover.webp",
-  "google_play_gallery_synced": true
+  "google_play_gallery_synced": true,
+  "google_play_gallery_jpeg": true
 }

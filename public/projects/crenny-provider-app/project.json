@@ -6,14 +6,14 @@
   "main_image": "/projects/crenny-provider-app/main.png",
   "cover_image": "/projects/crenny-provider-app/cover.webp",
   "gallery_images": [
-    "/projects/crenny-provider-app/gallery/01.png",
-    "/projects/crenny-provider-app/gallery/02.png",
-    "/projects/crenny-provider-app/gallery/03.png",
-    "/projects/crenny-provider-app/gallery/04.png",
-    "/projects/crenny-provider-app/gallery/05.png",
-    "/projects/crenny-provider-app/gallery/06.png",
-    "/projects/crenny-provider-app/gallery/07.png",
-    "/projects/crenny-provider-app/gallery/08.png"
+    "/projects/crenny-provider-app/gallery/01.jpg",
+    "/projects/crenny-provider-app/gallery/02.jpg",
+    "/projects/crenny-provider-app/gallery/03.jpg",
+    "/projects/crenny-provider-app/gallery/04.jpg",
+    "/projects/crenny-provider-app/gallery/05.jpg",
+    "/projects/crenny-provider-app/gallery/06.jpg",
+    "/projects/crenny-provider-app/gallery/07.jpg",
+    "/projects/crenny-provider-app/gallery/08.jpg"
   ],
   "locales": {
     "en": {
@@ -45,5 +45,6 @@
       "date": "سبتمبر 2026"
     }
   },
-  "google_play_gallery_synced": true
+  "google_play_gallery_synced": true,
+  "google_play_gallery_jpeg": true
 }

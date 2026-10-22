@@ -6,13 +6,13 @@
   "apple_store": "https://apps.apple.com/kg/app/lamasat-design/id6752251547",
   "main_image": "/projects/lamasat-furniture-ecommerce-app/main.png",
   "gallery_images": [
-    "/projects/lamasat-furniture-ecommerce-app/gallery/01.png",
-    "/projects/lamasat-furniture-ecommerce-app/gallery/02.png",
-    "/projects/lamasat-furniture-ecommerce-app/gallery/03.png",
-    "/projects/lamasat-furniture-ecommerce-app/gallery/04.png",
-    "/projects/lamasat-furniture-ecommerce-app/gallery/05.png",
-    "/projects/lamasat-furniture-ecommerce-app/gallery/06.png",
-    "/projects/lamasat-furniture-ecommerce-app/gallery/07.png"
+    "/projects/lamasat-furniture-ecommerce-app/gallery/01.jpg",
+    "/projects/lamasat-furniture-ecommerce-app/gallery/02.jpg",
+    "/projects/lamasat-furniture-ecommerce-app/gallery/03.jpg",
+    "/projects/lamasat-furniture-ecommerce-app/gallery/04.jpg",
+    "/projects/lamasat-furniture-ecommerce-app/gallery/05.jpg",
+    "/projects/lamasat-furniture-ecommerce-app/gallery/06.jpg",
+    "/projects/lamasat-furniture-ecommerce-app/gallery/07.jpg"
   ],
   "locales": {
     "en": {
@@ -47,5 +47,6 @@
     }
   },
   "cover_image": "/projects/lamasat-furniture-ecommerce-app/cover.webp",
-  "google_play_gallery_synced": true
+  "google_play_gallery_synced": true,
+  "google_play_gallery_jpeg": true
 }

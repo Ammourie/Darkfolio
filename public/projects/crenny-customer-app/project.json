@@ -6,13 +6,13 @@
   "main_image": "/projects/crenny-customer-app/main.png",
   "cover_image": "/projects/crenny-customer-app/cover.webp",
   "gallery_images": [
-    "/projects/crenny-customer-app/gallery/01.png",
-    "/projects/crenny-customer-app/gallery/02.png",
-    "/projects/crenny-customer-app/gallery/03.png",
-    "/projects/crenny-customer-app/gallery/04.png",
-    "/projects/crenny-customer-app/gallery/05.png",
-    "/projects/crenny-customer-app/gallery/06.png",
-    "/projects/crenny-customer-app/gallery/07.png"
+    "/projects/crenny-customer-app/gallery/01.jpg",
+    "/projects/crenny-customer-app/gallery/02.jpg",
+    "/projects/crenny-customer-app/gallery/03.jpg",
+    "/projects/crenny-customer-app/gallery/04.jpg",
+    "/projects/crenny-customer-app/gallery/05.jpg",
+    "/projects/crenny-customer-app/gallery/06.jpg",
+    "/projects/crenny-customer-app/gallery/07.jpg"
   ],
   "locales": {
     "en": {
@@ -46,5 +46,6 @@
       "date": "يوليو 2026"
     }
   },
-  "google_play_gallery_synced": true
+  "google_play_gallery_synced": true,
+  "google_play_gallery_jpeg": true
 }

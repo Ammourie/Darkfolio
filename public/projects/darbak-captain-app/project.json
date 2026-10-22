@@ -6,14 +6,14 @@
   "apple_store": "https://apps.apple.com/kg/app/darbak-captain/id6752899275",
   "main_image": "/projects/darbak-captain-app/main.png",
   "gallery_images": [
-    "/projects/darbak-captain-app/gallery/01.png",
-    "/projects/darbak-captain-app/gallery/02.png",
-    "/projects/darbak-captain-app/gallery/03.png",
-    "/projects/darbak-captain-app/gallery/04.png",
-    "/projects/darbak-captain-app/gallery/05.png",
-    "/projects/darbak-captain-app/gallery/06.png",
-    "/projects/darbak-captain-app/gallery/07.png",
-    "/projects/darbak-captain-app/gallery/08.png"
+    "/projects/darbak-captain-app/gallery/01.jpg",
+    "/projects/darbak-captain-app/gallery/02.jpg",
+    "/projects/darbak-captain-app/gallery/03.jpg",
+    "/projects/darbak-captain-app/gallery/04.jpg",
+    "/projects/darbak-captain-app/gallery/05.jpg",
+    "/projects/darbak-captain-app/gallery/06.jpg",
+    "/projects/darbak-captain-app/gallery/07.jpg",
+    "/projects/darbak-captain-app/gallery/08.jpg"
   ],
   "locales": {
     "en": {
@@ -46,5 +46,6 @@
     }
   },
   "cover_image": "/projects/darbak-captain-app/cover.webp",
-  "google_play_gallery_synced": true
+  "google_play_gallery_synced": true,
+  "google_play_gallery_jpeg": true
 }
