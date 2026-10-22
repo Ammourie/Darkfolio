@@ -1,0 +1,43 @@
+# Notifies Telegram when Vercel finishes a deploy (GitHub ↔ Vercel integration required).
+# Hobby plan: use this instead of Vercel webhooks.
+name: Telegram deploy notify
+
+on:
+  deployment_status:
+
+jobs:
+  notify:
+    if: >
+      github.event.deployment_status.state == 'success' ||
+      github.event.deployment_status.state == 'failure' ||
+      github.event.deployment_status.state == 'error'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Telegram message
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          STATE="${{ github.event.deployment_status.state }}"
+          ENV="${{ github.event.deployment.environment }}"
+          REF="${{ github.event.deployment.ref }}"
+          SHA="${{ github.event.deployment.sha }}"
+          URL="${{ github.event.deployment_status.target_url }}"
+          REPO="${{ github.repository }}"
+
+          case "$STATE" in
+            success) ICON="✅" ;;
+            failure|error) ICON="❌" ;;
+            *) ICON="📦" ;;
+          esac
+
+          TEXT="${ICON} Deploy ${STATE}
+          Repo: ${REPO}
+          Env: ${ENV}
+          Ref: ${REF}
+          Commit: ${SHA:0:7}
+          URL: ${URL:-—}"
+
+          curl -sS -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            -H "Content-Type: application/json" \
+            -d "$(jq -n --arg chat_id "$TELEGRAM_CHAT_ID" --arg text "$TEXT" '{chat_id: $chat_id, text: $text, disable_web_page_preview: true}')"

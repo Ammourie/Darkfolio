@@ -177,3 +177,23 @@ node scripts/convert-play-galleries-to-jpeg.mjs
 | One app gallery (manual) | `py scripts/download_play_screenshots.py "<play-url>" -o path/to/gallery` |
 | JPEG optimize all synced galleries | `node scripts/convert-play-galleries-to-jpeg.mjs` |
 | JPEG optimize only not yet converted | `node scripts/convert-play-galleries-to-jpeg.mjs --skip-jpeg` |
+
+---
+
+## Vercel deploy → Telegram (GitHub Actions)
+
+Vercel Hobby has no project webhooks. With **GitHub + Vercel** linked, use `.github/workflows/telegram-deploy-notify.yml` (runs on `deployment_status`).
+
+1. Create a bot via [@BotFather](https://t.me/BotFather). If a token was ever leaked, `/revoke` and issue a new one.
+2. Add GitHub Actions secrets (CLI from repo root, after `gh auth login`):
+
+   ```powershell
+   gh secret set TELEGRAM_BOT_TOKEN --body "YOUR_TOKEN"
+   gh secret set TELEGRAM_CHAT_ID --body "YOUR_CHAT_ID"
+   ```
+
+   Or: repo **Settings** → **Secrets and variables** → **Actions**.
+
+3. Push the workflow to your default branch and trigger a Vercel deploy.
+
+Deploys must show under the repo **Deployments** tab (official Vercel ↔ GitHub integration).
