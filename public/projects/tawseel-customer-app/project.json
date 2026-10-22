@@ -1,0 +1,57 @@
+{
+  "slug": "tawseel-customer-app",
+  "order": 11,
+  "company": "",
+  "google_play": "",
+  "main_image": "/projects/tawseel-customer-app/main.png",
+  "gallery_images": [
+    "/projects/tawseel-customer-app/gallery/01.png",
+    "/projects/tawseel-customer-app/gallery/02.png",
+    "/projects/tawseel-customer-app/gallery/03.png",
+    "/projects/tawseel-customer-app/gallery/04.png",
+    "/projects/tawseel-customer-app/gallery/05.png",
+    "/projects/tawseel-customer-app/gallery/06.png",
+    "/projects/tawseel-customer-app/gallery/07.png",
+    "/projects/tawseel-customer-app/gallery/08.png",
+    "/projects/tawseel-customer-app/gallery/09.png",
+    "/projects/tawseel-customer-app/gallery/10.png",
+    "/projects/tawseel-customer-app/gallery/11.png"
+  ],
+  "locales": {
+    "en": {
+      "title": "Tawseel Customer App",
+      "description_short": "The customer-facing super app of the Tawseel ecosystem, combining taxi and delivery, e-commerce, and restaurant ordering with live driver tracking.",
+      "description_long": "Tawseel Customer is the customer app of the Tawseel system, a platform that also includes a driver app and a partner (restaurant) app. The customer app is made up of three sub-apps. The Taxi app lets users book rides for people and deliver goods. The E-commerce app is a full online shopping experience built on a fashion e-commerce app foundation. The Restaurants app lets customers browse menus and order meals. Every sub-app includes live driver tracking so customers can follow their ride or order in real time. Built with Flutter and Dart, the app uses native Kotlin through method channels for platform-specific features and Firebase for backend services.",
+      "tags": [
+        "Flutter",
+        "Dart",
+        "Native Kotlin",
+        "Method Channels",
+        "Firebase",
+        "Ride Hailing",
+        "E-commerce",
+        "Food Delivery",
+        "Live Tracking"
+      ],
+      "date": ""
+    },
+    "ar": {
+      "title": "تطبيق توصيل للزبائن",
+      "description_short": "التطبيق الشامل للزبائن ضمن منظومة توصيل، يجمع بين التاكسي والتوصيل والتجارة الإلكترونية وطلب الوجبات مع تتبع مباشر للسائق.",
+      "description_long": "تطبيق توصيل للزبائن هو تطبيق العميل ضمن منظومة توصيل التي تضم أيضاً تطبيق السائق وتطبيق الشريك (المطعم). يتكون تطبيق الزبون من ثلاثة تطبيقات فرعية. تطبيق التاكسي يتيح حجز الرحلات ونقل الأشخاص وتوصيل البضائع. تطبيق التجارة الإلكترونية يقدم تجربة تسوق متكاملة مبنية على أساس تطبيق تجارة إلكترونية للأزياء. تطبيق المطاعم يتيح للزبائن تصفح القوائم وطلب الوجبات. تتضمن جميع التطبيقات الفرعية ميزة التتبع المباشر للسائق ليتمكن الزبون من متابعة رحلته أو طلبه لحظة بلحظة. تم بناء التطبيق باستخدام Flutter وDart، مع استخدام Kotlin الأصلي عبر قنوات الميثود (Method Channels) للميزات الخاصة بالنظام، وFirebase للخدمات الخلفية.",
+      "tags": [
+        "Flutter",
+        "Dart",
+        "Kotlin",
+        "قنوات الميثود",
+        "Firebase",
+        "طلب سيارات",
+        "التجارة الإلكترونية",
+        "توصيل الطعام",
+        "التتبع المباشر"
+      ],
+      "date": ""
+    }
+  },
+  "cover_image": "/projects/tawseel-customer-app/cover.webp"
+}

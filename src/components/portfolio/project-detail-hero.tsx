@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Building2, Calendar, ExternalLink, Github, Layers, Smartphone } from 'lucide-react';
+import { Building2, ExternalLink, Github, Layers, Smartphone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { BentoCard } from '@/components/portfolio/bento-card';
 import {
@@ -93,22 +93,14 @@ export function ProjectDetailHero({ project, storeLabels }: ProjectDetailHeroPro
             </p>
           </div>
 
-          {(project.company || project.date) && (
+          {project.company ? (
             <ul className="flex flex-col gap-2 text-sm text-muted-foreground sm:flex-row sm:flex-wrap sm:gap-x-6 sm:gap-y-2">
-              {project.company ? (
-                <li className="flex min-w-0 max-w-full items-center gap-2.5">
-                  <Building2 className="h-4 w-4 shrink-0 text-primary/80" aria-hidden />
-                  <span className="truncate">{project.company}</span>
-                </li>
-              ) : null}
-              {project.date ? (
-                <li className="flex shrink-0 items-center gap-2.5">
-                  <Calendar className="h-4 w-4 shrink-0 text-primary/80" aria-hidden />
-                  <span>{project.date}</span>
-                </li>
-              ) : null}
+              <li className="flex min-w-0 max-w-full items-center gap-2.5">
+                <Building2 className="h-4 w-4 shrink-0 text-primary/80" aria-hidden />
+                <span className="truncate">{project.company}</span>
+              </li>
             </ul>
-          )}
+          ) : null}
         </div>
 
         <div className="flex flex-col gap-4">

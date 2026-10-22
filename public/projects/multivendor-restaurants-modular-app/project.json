@@ -21,19 +21,19 @@
       "date": "August 3, 2025 - Present"
     },
     "ar": {
-      "title": "Multivendor Restaurants Modular Application",
-      "description_short": "A modular multivendor platform for restaurants with menu browsing, ordering, and vendor management features.",
-      "description_long": "This Flutter-based multivendor restaurant application offers a fully modular architecture that supports multiple restaurants under one platform. Users can browse restaurant menus, filter by cuisine type, place orders, and track deliveries in real time. Vendors can manage their menus, receive orders, and update their availability. The modular design allows for easy integration of additional features like loyalty programs, promotional campaigns, and delivery tracking. It is built for scalability, ensuring it can grow from small local food markets to large multi-city operations.",
+      "title": "تطبيق مطاعم متعدد البائعين (معياري)",
+      "description_short": "منصة معيارية متعددة البائعين للمطاعم: تصفح القوائم، الطلب، وإدارة المتاجر.",
+      "description_long": "تطبيق مطاعم متعدد البائعين مبني بـ Flutter يعتمد هيكلاً معيارياً يدعم عدة مطاعم ضمن منصة واحدة. يمكن للمستخدمين تصفح قوائم المطاعم، التصفية حسب نوع المطبخ، تقديم الطلبات، ومتابعة التوصيل في الوقت الفعلي. يدير البائعون قوائمهم واستقبال الطلبات وتحديث توفرهم. يسهّل التصميم المعياري إضافة ميزات مثل برامج الولاء، الحملات الترويجية، وتتبع التوصيل. مبني للتوسع من أسواق محلية صغيرة إلى عمليات متعددة المدن.",
       "tags": [
         "Flutter",
-        "eCommerce",
-        "Multivendor",
-        "Restaurants",
-        "Food Delivery",
-        "Vendor Management",
-        "Modular Architecture"
+        "التجارة الإلكترونية",
+        "متعدد البائعين",
+        "مطاعم",
+        "توصيل الطعام",
+        "إدارة البائعين",
+        "الهيكل المعياري"
       ],
-      "date": "August 3, 2025 - Present"
+      "date": "3 آب 2025 - حتى الآن"
     }
   }
 }
