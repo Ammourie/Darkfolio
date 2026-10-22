@@ -6,11 +6,13 @@
   "apple_store": "https://apps.apple.com/kg/app/lamasat-design/id6752251547",
   "main_image": "/projects/lamasat-furniture-ecommerce-app/main.png",
   "gallery_images": [
-    "/projects/lamasat-furniture-ecommerce-app/gallery/01.webp",
-    "/projects/lamasat-furniture-ecommerce-app/gallery/02.webp",
-    "/projects/lamasat-furniture-ecommerce-app/gallery/03.webp",
-    "/projects/lamasat-furniture-ecommerce-app/gallery/04.webp",
-    "/projects/lamasat-furniture-ecommerce-app/gallery/05.webp"
+    "/projects/lamasat-furniture-ecommerce-app/gallery/01.png",
+    "/projects/lamasat-furniture-ecommerce-app/gallery/02.png",
+    "/projects/lamasat-furniture-ecommerce-app/gallery/03.png",
+    "/projects/lamasat-furniture-ecommerce-app/gallery/04.png",
+    "/projects/lamasat-furniture-ecommerce-app/gallery/05.png",
+    "/projects/lamasat-furniture-ecommerce-app/gallery/06.png",
+    "/projects/lamasat-furniture-ecommerce-app/gallery/07.png"
   ],
   "locales": {
     "en": {
@@ -44,5 +46,6 @@
       "date": "20 يوليو 2025 - 3 أغسطس 2025"
     }
   },
-  "cover_image": "/projects/lamasat-furniture-ecommerce-app/cover.webp"
+  "cover_image": "/projects/lamasat-furniture-ecommerce-app/cover.webp",
+  "google_play_gallery_synced": true
 }

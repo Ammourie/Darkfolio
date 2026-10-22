@@ -6,14 +6,14 @@
   "apple_store": "https://apps.apple.com/kg/app/%D8%A3%D8%AE%D8%B6%D8%B1-%D9%84%D9%84%D8%B2%D8%B1%D8%A7%D8%B9%D8%A9/id6748577762",
   "main_image": "/projects/green-multivendor-farming-app/main.png",
   "gallery_images": [
-    "/projects/green-multivendor-farming-app/gallery/01.webp",
-    "/projects/green-multivendor-farming-app/gallery/02.webp",
-    "/projects/green-multivendor-farming-app/gallery/03.webp",
-    "/projects/green-multivendor-farming-app/gallery/04.webp",
-    "/projects/green-multivendor-farming-app/gallery/05.webp",
-    "/projects/green-multivendor-farming-app/gallery/06.webp",
-    "/projects/green-multivendor-farming-app/gallery/07.webp",
-    "/projects/green-multivendor-farming-app/gallery/08.webp"
+    "/projects/green-multivendor-farming-app/gallery/01.png",
+    "/projects/green-multivendor-farming-app/gallery/02.png",
+    "/projects/green-multivendor-farming-app/gallery/03.png",
+    "/projects/green-multivendor-farming-app/gallery/04.png",
+    "/projects/green-multivendor-farming-app/gallery/05.png",
+    "/projects/green-multivendor-farming-app/gallery/06.png",
+    "/projects/green-multivendor-farming-app/gallery/07.png",
+    "/projects/green-multivendor-farming-app/gallery/08.png"
   ],
   "locales": {
     "en": {
@@ -49,5 +49,6 @@
       "date": "29 يونيو 2025 - 20 يوليو 2025"
     }
   },
-  "cover_image": "/projects/green-multivendor-farming-app/cover.webp"
+  "cover_image": "/projects/green-multivendor-farming-app/cover.webp",
+  "google_play_gallery_synced": true
 }

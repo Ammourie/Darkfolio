@@ -9,7 +9,9 @@
     "/projects/hazal-cosmetics-ecommerce-app/gallery/02.png",
     "/projects/hazal-cosmetics-ecommerce-app/gallery/03.png",
     "/projects/hazal-cosmetics-ecommerce-app/gallery/04.png",
-    "/projects/hazal-cosmetics-ecommerce-app/gallery/06.png"
+    "/projects/hazal-cosmetics-ecommerce-app/gallery/05.png",
+    "/projects/hazal-cosmetics-ecommerce-app/gallery/06.png",
+    "/projects/hazal-cosmetics-ecommerce-app/gallery/07.png"
   ],
   "locales": {
     "en": {
@@ -43,5 +45,6 @@
       "date": "سبتمبر 2026"
     }
   },
-  "cover_image": "/projects/hazal-cosmetics-ecommerce-app/cover.webp"
+  "cover_image": "/projects/hazal-cosmetics-ecommerce-app/cover.webp",
+  "google_play_gallery_synced": true
 }

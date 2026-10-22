@@ -5,15 +5,10 @@
   "google_play": "https://play.google.com/store/apps/details?id=com.osoustech.ecommerceFashion",
   "main_image": "/projects/fashion-modular-ecommerce-application/main.png",
   "gallery_images": [
-    "/projects/fashion-modular-ecommerce-application/gallery/01.png",
-    "/projects/fashion-modular-ecommerce-application/gallery/02.png",
-    "/projects/fashion-modular-ecommerce-application/gallery/03.png",
-    "/projects/fashion-modular-ecommerce-application/gallery/04.png",
-    "/projects/fashion-modular-ecommerce-application/gallery/05.png",
-    "/projects/fashion-modular-ecommerce-application/gallery/06.png",
-    "/projects/fashion-modular-ecommerce-application/gallery/07.png",
-    "/projects/fashion-modular-ecommerce-application/gallery/08.png",
-    "/projects/fashion-modular-ecommerce-application/gallery/09.png"
+    "/projects/fashion-modular-ecommerce-application/gallery/01.jpg",
+    "/projects/fashion-modular-ecommerce-application/gallery/02.jpg",
+    "/projects/fashion-modular-ecommerce-application/gallery/03.jpg",
+    "/projects/fashion-modular-ecommerce-application/gallery/04.jpg"
   ],
   "locales": {
     "en": {
@@ -45,5 +40,6 @@
       "date": "يوليو 2024"
     }
   },
-  "cover_image": "/projects/fashion-modular-ecommerce-application/cover.webp"
+  "cover_image": "/projects/fashion-modular-ecommerce-application/cover.webp",
+  "google_play_gallery_synced": true
 }
