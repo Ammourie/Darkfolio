@@ -1,0 +1,56 @@
+{
+  "slug": "tawseel-partner-app",
+  "order": 12,
+  "company": "",
+  "google_play": "",
+  "main_image": "/projects/tawseel-partner-app/main.png",
+  "gallery_images": [
+    "/projects/tawseel-partner-app/gallery/01.png",
+    "/projects/tawseel-partner-app/gallery/02.png",
+    "/projects/tawseel-partner-app/gallery/03.png",
+    "/projects/tawseel-partner-app/gallery/04.png",
+    "/projects/tawseel-partner-app/gallery/05.png",
+    "/projects/tawseel-partner-app/gallery/06.png",
+    "/projects/tawseel-partner-app/gallery/07.png",
+    "/projects/tawseel-partner-app/gallery/08.png",
+    "/projects/tawseel-partner-app/gallery/09.png",
+    "/projects/tawseel-partner-app/gallery/10.png"
+  ],
+  "locales": {
+    "en": {
+      "title": "Tawseel Partner App",
+      "description_short": "The restaurant-side app of the Tawseel system for managing menus, extras, categories, and incoming customer orders.",
+      "description_long": "Tawseel Partner is the restaurant app in the Tawseel system, which also includes a customer app and a driver app. It gives restaurant owners and staff full control over their menu: adding, editing, and removing food items, organizing them into categories, and defining extras and add-ons for each item. The app also handles the full order lifecycle, so partners receive incoming customer orders, review their details, and move them through each stage until the driver picks them up. Built with Flutter and Dart, it uses native Kotlin through method channels for platform-specific features and Firebase for backend services.",
+      "tags": [
+        "Flutter",
+        "Dart",
+        "Native Kotlin",
+        "Method Channels",
+        "Firebase",
+        "Restaurant Management",
+        "Menu Management",
+        "Order Management",
+        "Food Delivery"
+      ],
+      "date": ""
+    },
+    "ar": {
+      "title": "تطبيق توصيل للشركاء",
+      "description_short": "تطبيق المطاعم ضمن منظومة توصيل لإدارة قوائم الطعام والإضافات والتصنيفات واستقبال طلبات الزبائن.",
+      "description_long": "تطبيق توصيل للشركاء هو تطبيق المطعم ضمن منظومة توصيل التي تضم أيضاً تطبيق الزبون وتطبيق السائق. يمنح أصحاب المطاعم وموظفيهم تحكماً كاملاً بقائمة الطعام: إضافة الأصناف وتعديلها وحذفها، وتنظيمها ضمن تصنيفات، وتحديد الإضافات الخاصة بكل صنف. كما يدير التطبيق دورة حياة الطلب بالكامل، حيث يستقبل الشريك طلبات الزبائن ويراجع تفاصيلها وينقلها عبر مراحلها حتى يستلمها السائق. تم بناء التطبيق باستخدام Flutter وDart، مع استخدام Kotlin الأصلي عبر قنوات الميثود (Method Channels) للميزات الخاصة بالنظام، وFirebase للخدمات الخلفية.",
+      "tags": [
+        "Flutter",
+        "Dart",
+        "Kotlin",
+        "قنوات الميثود",
+        "Firebase",
+        "إدارة المطاعم",
+        "إدارة القوائم",
+        "إدارة الطلبات",
+        "توصيل الطعام"
+      ],
+      "date": ""
+    }
+  },
+  "cover_image": "/projects/tawseel-partner-app/cover.webp"
+}
