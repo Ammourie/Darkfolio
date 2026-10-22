@@ -1,0 +1,49 @@
+{
+  "slug": "crenny-customer-app",
+  "order": 3,
+  "company": "Osous Technology LLC",
+  "google_play": "https://play.google.com/store/apps/details?id=com.osoustech.crenny",
+  "main_image": "/projects/crenny-customer-app/main.png",
+  "cover_image": "/projects/crenny-customer-app/cover.webp",
+  "gallery_images": [
+    "/projects/crenny-customer-app/gallery/01.webp",
+    "/projects/crenny-customer-app/gallery/02.webp",
+    "/projects/crenny-customer-app/gallery/03.webp",
+    "/projects/crenny-customer-app/gallery/04.webp",
+    "/projects/crenny-customer-app/gallery/05.webp",
+    "/projects/crenny-customer-app/gallery/06.webp",
+    "/projects/crenny-customer-app/gallery/07.webp"
+  ],
+  "locales": {
+    "en": {
+      "title": "Crenny – Customer App",
+      "description_short": "On-demand roadside assistance with five service types: towing, recovery, tires, battery, and fuel delivery—plus live provider tracking.",
+      "description_long": "Crenny (كريني) is a Flutter roadside assistance app for drivers who need help on the road. From one home screen, customers choose among five transportation and assistance services: full vehicle transport (tow), on-site vehicle recovery / winch release, tire replacement, battery jump-start, and fuel delivery. Users share their location on the map, request a service, get matched with a nearby provider, and track arrival in real time—similar in flow to multi-service mobility apps like Darbak, but focused on emergency and roadside use cases. The experience supports Arabic RTL, account and order history, notifications, and map-based pickup. Built with Flutter, Google Maps, and real-time job matching for reliable field operations.",
+      "tags": [
+        "Flutter",
+        "Roadside Assistance",
+        "Transportation",
+        "Google Maps",
+        "Live Tracking",
+        "RTL",
+        "Mobile App"
+      ],
+      "date": "July 2026"
+    },
+    "ar": {
+      "title": "كريني – تطبيق الزبون",
+      "description_short": "مساعدة على الطريق فوراً: نقل مركبة، تحرير، إطارات، بطارية، ووقود مع تتبع مباشر للمزوّد.",
+      "description_long": "كريني تطبيق Flutter لمساعدة السائقين على الطريق. من الشاشة الرئيسية يختار الزبون بين خمس خدمات: نقل المركبة (سحب)، تحرير المركبة (ونش)، تبديل الإطار، تشغيل البطارية، وتوصيل الوقود. يحدّد موقعه على الخريطة، يرسل الطلب، يُربَط مع أقرب مزوّد، ويتتبع وصوله لحظياً—بنفس منطق تطبيقات التنقل متعددة الخدمات مثل دربك، لكن لحالات الطوارئ وخدمات الطريق. يدعم الواجهة العربية (RTL)، الطلبات، الإشعارات، والملف الشخصي. مبني بـ Flutter وخرائط Google وتتبع مباشر للمهام الميدانية.",
+      "tags": [
+        "Flutter",
+        "مساعدة على الطريق",
+        "النقل",
+        "خرائط Google",
+        "التتبع المباشر",
+        "RTL",
+        "تطبيق الهاتف"
+      ],
+      "date": "يوليو 2026"
+    }
+  }
+}

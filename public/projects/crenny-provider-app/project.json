@@ -1,0 +1,48 @@
+{
+  "slug": "crenny-provider-app",
+  "order": 4,
+  "company": "Osous Technology LLC",
+  "google_play": "https://play.google.com/store/apps/details?id=com.osoustech.crennydriver",
+  "main_image": "/projects/crenny-provider-app/main.png",
+  "cover_image": "/projects/crenny-provider-app/cover.webp",
+  "gallery_images": [
+    "/projects/crenny-provider-app/gallery/01.webp",
+    "/projects/crenny-provider-app/gallery/02.webp",
+    "/projects/crenny-provider-app/gallery/03.webp",
+    "/projects/crenny-provider-app/gallery/04.webp",
+    "/projects/crenny-provider-app/gallery/05.webp",
+    "/projects/crenny-provider-app/gallery/06.webp",
+    "/projects/crenny-provider-app/gallery/07.webp",
+    "/projects/crenny-provider-app/gallery/08.webp"
+  ],
+  "locales": {
+    "en": {
+      "title": "Crenny Provider – Driver App",
+      "description_short": "Driver app for towing and roadside professionals: receive nearby jobs, navigate to customers, and manage work in real time.",
+      "description_long": "Crenny Provider is the partner-side Flutter application for the Crenny platform. Service professionals who offer towing, winch recovery, tire changes, battery jump-starts, or fuel delivery receive incoming requests from nearby customers, accept jobs, navigate to the shared location, and complete trips efficiently. The app follows a straightforward driver workflow comparable to Darbak Captain—job inbox, accept/decline, maps navigation, status updates, and earnings-oriented trip management—without the customer app’s five-service picker. Optimized for field use with location sharing, real-time updates, and a simple UI for providers on the road.",
+      "tags": [
+        "Flutter",
+        "Driver App",
+        "Roadside Assistance",
+        "Google Maps",
+        "Live Tracking",
+        "Job Management"
+      ],
+      "date": "September 2026"
+    },
+    "ar": {
+      "title": "كريني مزوّد – تطبيق السائق",
+      "description_short": "تطبيق السائق/المزوّد: استقبال طلبات قريبة، التوجّه للزبون، وإدارة المهام مباشرة.",
+      "description_long": "تطبيق Crenny Provider هو جانب المزوّد في منصة كريني. يستقبل محترفو السحب والونش وتبديل الإطارات وتشغيل البطاريات وتوصيل الوقود الطلبات من الزبائن القريبين، يقبلون المهمة، يتوجّهون عبر الخرائط، ويُنهون الخدمة. سير عمل بسيط كتطبيق دربك كابتن: طلبات واردة، قبول أو رفض، تنقل، تحديث الحالة، ومتابعة العمل—بدون شاشة الخدمات الخمس للزبون. مبني بـ Flutter للاستخدام الميداني مع الموقع والتحديثات الفورية.",
+      "tags": [
+        "Flutter",
+        "تطبيق السائق",
+        "مساعدة على الطريق",
+        "خرائط Google",
+        "التتبع المباشر",
+        "إدارة المهام"
+      ],
+      "date": "سبتمبر 2026"
+    }
+  }
+}
